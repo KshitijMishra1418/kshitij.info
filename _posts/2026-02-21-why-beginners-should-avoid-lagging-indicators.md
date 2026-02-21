@@ -12,7 +12,7 @@ They react to price instead of predicting price.
 
 ## Real BTC Example (MACD Lagging Signal)
 
-![Bitcoin Lagging Indicator Example](/assets/charts/indicator-btc.png.png)
+![Bitcoin Lagging Indicator Example](/assets/images/indicator-btc.png.png)
 
 Bitcoin moved from $40,000 to $43,000 before MACD confirmed the trend.
 
