@@ -1,19 +1,39 @@
----
-layout: default
-title: Home
----
+<hr style="opacity:0.2; width:60%;">
 
-<h1 class="glow">Kshitij Mishra</h1>
-<p>AI • Systems • Intelligence</p>
+<div style="padding: 80px 20px;">
+    <h2>Core Skills</h2>
 
-<hr>
+    <div class="skills-grid">
 
-<h2>Knowledge Logs</h2>
+        <div class="skill-card">
+            <h3>AI & Machine Learning</h3>
+            <p>LLM Evaluation • Prompt Testing • Output Validation • AI Workflow Testing</p>
+        </div>
 
-<ul>
-{% for post in site.posts %}
-  <li>
-    <a href="{{ post.url }}">{{ post.title }}</a> — {{ post.date | date: "%B %d, %Y" }}
-  </li>
-{% endfor %}
-</ul>
+        <div class="skill-card">
+            <h3>Programming</h3>
+            <p>Python • SQL</p>
+        </div>
+
+        <div class="skill-card">
+            <h3>Data Analysis</h3>
+            <p>Pandas • NumPy • EDA • Trend Analysis • Data Cleaning</p>
+        </div>
+
+        <div class="skill-card">
+            <h3>Voice AI</h3>
+            <p>Whisper • Google STT • ElevenLabs • Coqui TTS</p>
+        </div>
+
+        <div class="skill-card">
+            <h3>Visualization</h3>
+            <p>Power BI • Structured Reporting</p>
+        </div>
+
+        <div class="skill-card">
+            <h3>Tools</h3>
+            <p>Jira • Notion • GitHub</p>
+        </div>
+
+    </div>
+</div>
