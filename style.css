@@ -149,3 +149,31 @@ ul {
     border-radius: 6px;
     font-weight: bold;
 }
+/* Floating Contact Button */
+.floating-contact {
+
+    position: fixed;
+    bottom: 25px;
+    right: 25px;
+
+    background: #00e5ff;
+    color: black;
+
+    padding: 14px 20px;
+    border-radius: 50px;
+
+    font-weight: bold;
+    text-decoration: none;
+
+    box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+
+    transition: all 0.3s ease;
+}
+
+/* Hover effect */
+.floating-contact:hover {
+
+    background: #00c4db;
+    transform: translateY(-3px);
+
+}
