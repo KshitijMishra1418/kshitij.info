@@ -5,10 +5,10 @@ title: Home
 
 <h1 class="glow">Kshitij Mishra</h1>
 <p>AI-Focused Quality Analyst | Python • SQL • LLM Evaluation</p>
+
 <div style="margin-top:30px;">
     <a href="https://www.linkedin.com/in/kshitij-mishra-0a5758197" target="_blank" class="btn">LinkedIn</a>
-    <a href="https://github.com/YOUR_KshitijMishra1418
-" target="_blank" class="btn">GitHub</a>
+    <a href="https://github.com/KshitijMishra1418" target="_blank" class="btn">GitHub</a>
     <a href="/Kshitij_Mishra_Resume.pdf" class="btn" download>Download Resume</a>
 </div>
 
@@ -17,14 +17,11 @@ title: Home
     <p>
         AI-focused Quality Analyst with hands-on experience evaluating production AI models,
         analyzing structured datasets, and improving system performance through structured,
-        data-driven insights. Proficient in Python, SQL, LLM evaluation, and AI workflow testing.
+        data-driven insights.
     </p>
-
     <p>
-        Experienced in identifying model inconsistencies, validating outputs across real-world
-        scenarios, and improving deployment readiness through systematic evaluation pipelines.
-        Strong exposure to cryptocurrency market data analysis, behavioral pattern recognition,
-        and scalable reporting workflows.
+        Proficient in Python, SQL, LLM evaluation, AI workflow testing, and structured reporting.
+        Strong exposure to cryptocurrency market data analysis and behavioral pattern recognition.
     </p>
 </div>
 
@@ -51,6 +48,31 @@ title: Home
             <h3>Voice AI</h3>
             <p>Whisper • Google STT • ElevenLabs</p>
         </div>
+    </div>
+</div>
+
+<div class="section">
+    <h2>Experience</h2>
+
+    <div class="card">
+        <h3>Quality Associate — Tavus AI</h3>
+        <p><strong>Jan 2024 – Present</strong></p>
+        <ul>
+            <li>Evaluated AI-generated outputs across production workflows.</li>
+            <li>Identified logical inconsistencies and performance gaps.</li>
+            <li>Improved model accuracy through structured feedback.</li>
+            <li>Tested LLM prompts and retrieval systems.</li>
+        </ul>
+    </div>
+
+    <div class="card">
+        <h3>Relationship Manager — Urban Company</h3>
+        <p><strong>Aug 2022 – Sep 2023</strong></p>
+        <ul>
+            <li>Analyzed customer behavior and service performance data.</li>
+            <li>Maintained structured performance reports.</li>
+            <li>Improved operational efficiency through data insights.</li>
+        </ul>
     </div>
 </div>
 
