@@ -4,7 +4,7 @@ title: Home
 ---
 
 <h1 class="glow">Kshitij Mishra</h1>
-<p>AI-Focused Quality Analyst | Python • SQL • LLM Evaluation</p>
+<p>AI-Focused Quality Analyst | Python • SQL • Data Analysis</p>
 
 <div style="margin-top:30px;">
     <a href="https://www.linkedin.com/in/kshitij-mishra-0a5758197" target="_blank" class="btn">LinkedIn</a>
@@ -58,10 +58,12 @@ title: Home
         <h3>Quality Associate — Tavus AI</h3>
         <p><strong>Jan 2024 – Present</strong></p>
         <ul>
-            <li>Evaluated AI-generated outputs across production workflows.</li>
-            <li>Identified logical inconsistencies and performance gaps.</li>
-            <li>Improved model accuracy through structured feedback.</li>
-            <li>Tested LLM prompts and retrieval systems.</li>
+            <li>EEvaluated AI-generated voice and video outputs across production workflows to ensure quality and reliability.</li>
+            <li>Analyzed large volumes of AI outputs to identify logical inconsistencies, hallucinations, and performance gaps.</li>
+            <li>Improved system accuracy by providing structured, data-driven feedback to engineering and research teams.</li>
+            <li>Tested LLM prompts and retrieval workflows to enhance output consistency and correctness.</li>
+            <li>Supported deployment readiness by validating AI performance across multiple real-world scenarios.</li>
+            <li>Collaborated with cross-functional teams to improve evaluation pipelines and reporting workflows.</li>
         </ul>
     </div>
 
@@ -72,6 +74,8 @@ title: Home
             <li>Analyzed customer behavior and service performance data.</li>
             <li>Maintained structured performance reports.</li>
             <li>Improved operational efficiency through data insights.</li>
+            <li>Tracked and analyzed partner performance metrics to identify trends and improve service quality.</li>
+            <li>Used structured data and operational insights to optimize partner onboarding and performance monitoring.</li>
         </ul>
     </div>
 </div>
