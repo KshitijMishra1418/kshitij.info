@@ -1,179 +1,33 @@
 body {
+
+    background-color: #020617;
+    color: #e2e8f0;
+
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto;
+
     margin: 0;
-    font-family: 'Segoe UI', sans-serif;
-    background: #0a0f1c;
-    color: #ffffff;
-    text-align: left;
 }
 
-/* Headings */
+.post-container {
+
+    max-width: 900px;
+
+    margin: 80px auto;
+
+    padding-left: 40px;
+    padding-right: 40px;
+
+}
 
 h1 {
-    font-size: 52px;
-    margin-top: 60px;
-    margin-bottom: 10px;
+
+    font-size: 48px;
+    font-weight: bold;
+
 }
 
 h2 {
-    font-size: 28px;
+
     margin-top: 50px;
-    margin-bottom: 18px;
-}
-
-/* Section Wrapper */
-
-.section {
-    padding: 35px 20px;
-    max-width: 1000px;
-    margin: auto;
-}
-
-/* Glow Effect */
-
-.glow {
-    color: #00ffff;
-    text-shadow: 0 0 8px #00ffff;
-}
-
-/* Cards */
-
-.card {
-    background: rgba(255,255,255,0.05);
-    padding: 20px;
-    margin: 15px auto;
-    border-radius: 10px;
-    border: 1px solid rgba(255,255,255,0.08);
-    max-width: 700px;
-}
-
-/* Skills Grid - Modern Responsive */
-
-.skills-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-    gap: 24px;
-    max-width: 1000px;
-    margin: 20px auto 0;
-}
-
-.skill-card {
-    padding: 22px;
-    border-radius: 12px;
-    background: rgba(255,255,255,0.05);
-    border: 1px solid rgba(255,255,255,0.08);
-    transition: 0.25s ease;
-    
-}
-
-.skill-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 8px 25px rgba(0,255,255,0.15);
-}
-
-/* Buttons */
-
-.btn {
-    display: inline-block;
-    margin: 8px;
-    padding: 10px 20px;
-    border-radius: 6px;
-    background: #00ffff;
-    color: #000;
-    text-decoration: none;
-    font-weight: bold;
-    transition: 0.3s ease;
-}
-
-.btn:hover {
-    background: #00cccc;
-    transform: translateY(-2px);
-}
-
-/* Lists */
-
-ul {
-    text-align: left;
-    max-width: 700px;
-    margin: auto;
-    line-height: 1.6;
-    padding-left: 20px;
-}
-
-.post-container {
-    max-width: 800px;
-    margin: 40px auto;
-    padding: 20px;
-    text-align: left;
-}
-
-.post-container h1,
-.post-container h2,
-.post-container h3 {
-    text-align: left;
-}
-
-.post-container img {
-    width: 100%;
-    height: auto;
-    margin: 20px 0;
-}
-/* Main content layout */
-.post-container {
-    max-width: 800px;
-    margin: 40px auto;
-    padding: 20px;
-    text-align: left;
-    line-height: 1.6;
-}
-
-/* Fix image spacing */
-.post-container img {
-    width: 100%;
-    margin: 20px 0;
-    border-radius: 8px;
-}
-
-/* Contact button container */
-.contact-container {
-    text-align: center;
-    margin-bottom: 40px;
-}
-
-/* Button styling */
-.btn {
-    display: inline-block;
-    padding: 12px 24px;
-    background: #00e5ff;
-    color: black;
-    text-decoration: none;
-    border-radius: 6px;
-    font-weight: bold;
-}
-/* Floating Contact Button */
-.floating-contact {
-
-    position: fixed;
-    bottom: 25px;
-    right: 25px;
-
-    background: #00e5ff;
-    color: black;
-
-    padding: 14px 20px;
-    border-radius: 50px;
-
-    font-weight: bold;
-    text-decoration: none;
-
-    box-shadow: 0 4px 12px rgba(0,0,0,0.3);
-
-    transition: all 0.3s ease;
-}
-
-/* Hover effect */
-.floating-contact:hover {
-
-    background: #00c4db;
-    transform: translateY(-3px);
 
 }
