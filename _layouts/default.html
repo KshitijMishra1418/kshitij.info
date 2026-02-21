@@ -4,12 +4,29 @@
     <meta charset="UTF-8">
     <title>{{ page.title }} | Kshitij Mishra</title>
     <link rel="stylesheet" href="/style.css">
+
+    <!-- Important for responsive -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
+
 <body>
 
-<div class="post-container">     {{ content }} </div>
-<div class="buttons">
-    <a href="mailto:your@email.com" class="btn">Contact Me</a>
-</div>
+    <!-- MAIN CONTENT -->
+    <main class="post-container">
+
+        {{ content }}
+
+    </main>
+
+
+    <!-- CONTACT BUTTON (fixed position optional) -->
+    <div class="contact-container">
+
+        <a href="mailto:mkshitij007@gmail.com" class="btn">
+            Contact Me
+        </a>
+
+    </div>
+
 </body>
 </html>
