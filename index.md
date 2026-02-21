@@ -15,8 +15,16 @@ title: Home
 <div class="section">
     <h2>About Me</h2>
     <p>
-        AI-focused Quality Analyst with experience evaluating production AI models,
-        analyzing structured datasets, and improving system performance through data-driven insights.
+        AI-focused Quality Analyst with hands-on experience evaluating production AI models,
+        analyzing structured datasets, and improving system performance through structured,
+        data-driven insights. Proficient in Python, SQL, LLM evaluation, and AI workflow testing.
+    </p>
+
+    <p>
+        Experienced in identifying model inconsistencies, validating outputs across real-world
+        scenarios, and improving deployment readiness through systematic evaluation pipelines.
+        Strong exposure to cryptocurrency market data analysis, behavioral pattern recognition,
+        and scalable reporting workflows.
     </p>
 </div>
 
