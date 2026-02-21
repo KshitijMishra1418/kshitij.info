@@ -1,1 +1,5 @@
-
+title: Kshitij Mishra
+description: AI • Systems • Analytics
+theme: minima
+markdown: kramdown
+permalink: /:title/
