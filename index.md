@@ -1,13 +1,7 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <meta charset="UTF-8">
-    <title>Kshitij Mishra</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-
-<div class="grid"></div>
+---
+layout: default
+title: Home
+---
 
 <div class="hero">
     <h1 class="glow">Kshitij Mishra</h1>
@@ -26,6 +20,3 @@
         {% endfor %}
     </div>
 </section>
-
-</body>
-</html>
