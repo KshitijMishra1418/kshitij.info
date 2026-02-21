@@ -3,7 +3,7 @@ body {
     font-family: 'Segoe UI', sans-serif;
     background: #0a0f1c;
     color: #ffffff;
-    text-align: center;
+    text-align: left;
 }
 
 /* Headings */
@@ -97,4 +97,23 @@ ul {
     margin: auto;
     line-height: 1.6;
     padding-left: 20px;
+}
+
+.post-container {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 20px;
+    text-align: left;
+}
+
+.post-container h1,
+.post-container h2,
+.post-container h3 {
+    text-align: left;
+}
+
+.post-container img {
+    width: 100%;
+    height: auto;
+    margin: 20px 0;
 }
