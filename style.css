@@ -1,25 +1,52 @@
+body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background: radial-gradient(circle at top, #0f2027, #0a0f1c 60%);
+    color: #ffffff;
+    text-align: center;
+}
+
+h1, h2, h3 {
+    margin-bottom: 20px;
+}
+
+h2 {
+    font-size: 32px;
+    margin-bottom: 40px;
+}
+
+.glow {
+    color: #00ffff;
+    text-shadow: 0 0 10px #00ffff, 0 0 30px #00ffff;
+}
+
 .skills-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 25px;
-    margin-top: 40px;
+    gap: 40px;
+    max-width: 1100px;
+    margin: auto;
 }
 
 .skill-card {
-    background: rgba(255,255,255,0.05);
     padding: 25px;
     border-radius: 12px;
+    background: rgba(255,255,255,0.05);
     backdrop-filter: blur(8px);
+    border: 1px solid rgba(0,255,255,0.2);
     transition: 0.3s ease;
-    border: 1px solid rgba(255,255,255,0.1);
 }
 
 .skill-card:hover {
     transform: translateY(-8px);
-    box-shadow: 0 0 25px rgba(0,255,255,0.3);
+    box-shadow: 0 0 30px rgba(0,255,255,0.4);
 }
 
-.skill-card h3 {
-    margin-bottom: 15px;
-    color: #00ffff;
+.card {
+    max-width: 700px;
+    margin: 20px auto;
+    padding: 25px;
+    border-radius: 12px;
+    background: rgba(255,255,255,0.05);
+    border: 1px solid rgba(255,255,255,0.1);
 }
