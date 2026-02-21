@@ -117,3 +117,35 @@ ul {
     height: auto;
     margin: 20px 0;
 }
+/* Main content layout */
+.post-container {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 20px;
+    text-align: left;
+    line-height: 1.6;
+}
+
+/* Fix image spacing */
+.post-container img {
+    width: 100%;
+    margin: 20px 0;
+    border-radius: 8px;
+}
+
+/* Contact button container */
+.contact-container {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+/* Button styling */
+.btn {
+    display: inline-block;
+    padding: 12px 24px;
+    background: #00e5ff;
+    color: black;
+    text-decoration: none;
+    border-radius: 6px;
+    font-weight: bold;
+}
