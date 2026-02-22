@@ -230,3 +230,56 @@ h2 {
   box-shadow: 0 12px 35px rgba(0,0,0,0.35);
   border-color: rgba(124, 92, 255, 0.35);
 }
+/* ===== HERO SECTION ===== */
+.hero {
+  text-align: center;
+  padding: 60px 20px 40px;
+}
+
+.hero-subtitle {
+  margin-top: 15px;
+  font-size: 1.1rem;
+  color: rgba(255,255,255,0.75);
+}
+
+/* ===== NAME GLOW (Hover Only - Premium) ===== */
+.glow {
+  font-size: 3.5rem;
+  font-weight: 700;
+  color: #ffffff;
+  letter-spacing: 1px;
+  transition: text-shadow 0.3s ease, transform 0.3s ease;
+}
+
+.glow:hover {
+  text-shadow:
+    0 0 10px rgba(124, 92, 255, 0.8),
+    0 0 25px rgba(124, 92, 255, 0.6);
+  transform: scale(1.02);
+}
+
+/* ===== HERO BUTTONS ===== */
+.hero-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 25px;
+  flex-wrap: wrap;
+}
+
+/* Mobile Fix */
+@media (max-width: 600px) {
+  .hero-buttons {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .btn {
+    width: 85%;
+    text-align: center;
+  }
+
+  .glow {
+    font-size: 2.3rem;
+  }
+}
