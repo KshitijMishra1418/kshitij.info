@@ -3,13 +3,17 @@ layout: default
 title: Home
 ---
 
-<h1 class="glow">Kshitij Mishra</h1>
-<p>AI-Focused Quality Analyst | Python • SQL • Data Analysis</p>
+<div class="hero">
+    <h1 class="glow">Kshitij Mishra</h1>
+    <p class="hero-subtitle">
+        AI-Focused Quality Analyst | Python • SQL • Data Analysis
+    </p>
 
-<div style="margin-top:30px;">
-    <a href="https://www.linkedin.com/in/kshitij-mishra-0a5758197" target="_blank" class="btn">LinkedIn</a>
-    <a href="https://github.com/KshitijMishra1418" target="_blank" class="btn">GitHub</a>
-    <a href="/Kshitij_Mishra_Resume.pdf" class="btn" download>Download Resume</a>
+    <div class="hero-buttons">
+        <a href="https://www.linkedin.com/in/kshitij-mishra-0a5758197" target="_blank" class="btn">LinkedIn</a>
+        <a href="https://github.com/KshitijMishra1418" target="_blank" class="btn">GitHub</a>
+        <a href="/Kshitij_Mishra_Resume.pdf" class="btn" download>Download Resume</a>
+    </div>
 </div>
 
 <div class="section">
