@@ -103,16 +103,6 @@ title: Home
         <p><strong>Tech Stack:</strong> Python • Pandas • SQL • Data Visualization</p>
     </div>
 
-    <div class="card">
-        <h3>Fleet Maintenance Prototype (Flask + SQLite)</h3>
-        <ul>
-            <li>Implemented a working prototype web app to simulate fleet maintenance operations end-to-end.</li>
-            <li>One-click monthly task generation and smart assignment logic (max 3 active tasks/tech, depot preference).</li>
-            <li>Task execution flow with before/after photos, parts used, completion status, and signature capture.</li>
-        </ul>
-        <p><strong>Tech Stack:</strong> Python • Flask • SQLite • HTML • CSS</p>
-        <a href="https://github.com/KshitijMishra1418/automated-fleet-maintenance-management-system" target="_blank" class="btn">View on GitHub</a>
-    </div>
 </div>
 <div class="section">
     <h2>Daily Learning Logs</h2>
