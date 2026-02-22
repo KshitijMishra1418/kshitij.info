@@ -80,18 +80,35 @@ title: Home
     </div>
 </div>
 
-<div class="section">
-    <h2>Projects</h2>
+<div class="card">
+    <h3>AI Voice & Output Evaluation System</h3>
+    <p>
+        Designed a structured evaluation framework for AI-generated voice and LLM outputs.
+        Built validation logic to detect hallucinations, logical inconsistencies,
+        and response degradation across large-scale production workflows.
+    </p>
+    <p>
+        Implemented structured scoring metrics and comparative testing pipelines
+        to benchmark model performance across multiple prompt variations.
+    </p>
+    <p>
+        <strong>Tech Focus:</strong> Python • LLM Evaluation • Prompt Testing • Workflow Validation
+    </p>
+</div>
 
-    <div class="card">
-        <h3>AI Voice & Output Evaluation System</h3>
-        <p>Structured evaluation framework for AI-generated outputs.</p>
-    </div>
-
-    <div class="card">
-        <h3>Crypto Market Analysis</h3>
-        <p>Analyzed volatility patterns and behavioral signals.</p>
-    </div>
+<div class="card">
+    <h3>Crypto Market Analysis System</h3>
+    <p>
+        Developed a data-driven market analysis workflow to study volatility clusters,
+        liquidity behavior, and price structure patterns across major crypto assets.
+    </p>
+    <p>
+        Used Python-based time series analysis and SQL-backed structured datasets
+        to identify behavioral signals and trend persistence across multi-timeframe data.
+    </p>
+    <p>
+        <strong>Tech Stack:</strong> Python • Pandas • SQL • Data Visualization
+    </p>
 </div>
 
 <div class="section">
