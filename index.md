@@ -105,12 +105,30 @@ title: Home
 
 </div>
 <div class="section">
-    <h2>Daily Learning Logs</h2>
+  <div class="section-head">
+    <h2>Engineering Logs</h2>
+    <p class="muted">Short notes on systems, SQL, Python, and projects I build.</p>
+  </div>
 
-    {% for post in site.posts limit:5 %}
-        <div class="card">
-            <h3><a href="{{ post.url }}">{{ post.title }}</a></h3>
-            <p>{{ post.date | date: "%B %d, %Y" }}</p>
+  <div class="logs-grid">
+    {% for post in site.posts limit:6 %}
+      <a class="log-card" href="{{ post.url | relative_url }}">
+        <div class="log-top">
+          <h3 class="log-title">{{ post.title }}</h3>
+          <span class="log-date">{{ post.date | date: "%b %d, %Y" }}</span>
         </div>
+
+        {% if post.categories %}
+          <div class="log-tags">
+            {% for cat in post.categories limit:3 %}
+              <span class="tag">{{ cat }}</span>
+            {% endfor %}
+          </div>
+        {% endif %}
+      </a>
     {% endfor %}
+  </div>
+
+  <div style="margin-top:18px;">
+  </div>
 </div>
