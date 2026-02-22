@@ -111,7 +111,7 @@ title: Home
             <li>Task execution flow with before/after photos, parts used, completion status, and signature capture.</li>
         </ul>
         <p><strong>Tech Stack:</strong> Python • Flask • SQLite • HTML • CSS</p>
-        <a href="PASTE_YOUR_GITHUB_REPO_LINK" target="_blank" class="btn">View on GitHub</a>
+        <a href="https://github.com/KshitijMishra1418/automated-fleet-maintenance-management-system" target="_blank" class="btn">View on GitHub</a>
     </div>
 </div>
 <div class="section">
