@@ -232,7 +232,7 @@ h2 {
 }
 /* ===== HERO SECTION ===== */
 .hero {
-  text-align: center;
+  text-align: left;
   padding: 60px 20px 40px;
 }
 
@@ -261,7 +261,7 @@ h2 {
 /* ===== HERO BUTTONS ===== */
 .hero-buttons {
   display: flex;
-  justify-content: center;
+  justify-content: left;
   gap: 15px;
   margin-top: 25px;
   flex-wrap: wrap;
@@ -271,12 +271,12 @@ h2 {
 @media (max-width: 600px) {
   .hero-buttons {
     flex-direction: column;
-    align-items: center;
+    align-items: left;
   }
 
   .btn {
     width: 85%;
-    text-align: center;
+    text-align: left;
   }
 
   .glow {
