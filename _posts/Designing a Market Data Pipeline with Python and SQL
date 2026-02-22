@@ -1,0 +1,105 @@
+As part of building a Crypto Market Analysis system, I focused on designing the foundational data layer — how raw market data is structured, validated, and stored for analytics.
+
+Instead of treating Python and SQL as separate tools, I approached them as components of the same pipeline.
+
+Data Ingestion and Structuring (Python Layer)
+
+Market data from APIs typically arrives in semi-structured JSON format. Before persistence, the data needs to be normalized into a schema-aligned structure.
+
+For OHLCV (Open, High, Low, Close, Volume), a single structured record follows a clean mapping:
+
+record = {
+    "symbol": "BTCUSDT",
+    "timestamp": 1700000000,
+    "open": 42000.50,
+    "high": 42500.00,
+    "low": 41800.25,
+    "close": 42310.75,
+    "volume": 1250.456
+}
+
+Key implementation considerations:
+
+Timestamps standardized to epoch format for consistent ordering
+
+Strict numeric precision to prevent floating-point distortion
+
+Pre-insertion validation to avoid corrupt or incomplete records
+
+Schema-aligned transformation before database interaction
+
+This ensures the storage layer remains reliable and query-efficient.
+
+Schema Design for Time-Series Storage (SQL Layer)
+
+Rather than storing raw payloads, the data is persisted in a structured fact table optimized for time-series analysis:
+
+CREATE TABLE fact_ohlcv (
+    id SERIAL PRIMARY KEY,
+    symbol VARCHAR(20) NOT NULL,
+    timeframe VARCHAR(10) NOT NULL,
+    ts BIGINT NOT NULL,
+    open NUMERIC(18,8),
+    high NUMERIC(18,8),
+    low NUMERIC(18,8),
+    close NUMERIC(18,8),
+    volume NUMERIC(18,8)
+);
+
+Design decisions:
+
+NUMERIC(18,8) for financial precision
+
+Separate timeframe column to support multi-resolution analytics (1H, 4H, 1D)
+
+Structured fact table to enable indicator computation and aggregation
+
+Indexing strategy centered around (symbol, ts) for performance optimization
+
+Example retrieval query:
+
+SELECT symbol, close
+FROM fact_ohlcv
+WHERE symbol = 'BTCUSDT'
+ORDER BY ts DESC
+LIMIT 50;
+
+This structure enables:
+
+Rolling indicator calculations (EMA, RSI)
+
+Backtesting workflows
+
+Volume and volatility aggregation
+
+Direct BI tool integration
+
+System Architecture
+
+The system follows a modular pipeline:
+
+API → Python ETL → SQL Storage → Analytics / BI Layer
+
+Separation of concerns ensures scalability:
+
+Python manages ingestion and transformation.
+
+SQL ensures durable storage and efficient querying.
+
+BI tools consume optimized relational data.
+
+Engineering Insight
+
+A dashboard is only as reliable as the schema behind it.
+
+Performance, scalability, and analytical flexibility depend on:
+
+Proper normalization
+
+Index planning
+
+Precision management
+
+Clean separation between ingestion and storage logic
+
+The data layer determines whether analytics remains fast at scale.
