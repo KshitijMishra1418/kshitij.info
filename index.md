@@ -3,7 +3,7 @@ layout: default
 title: Home
 ---
 
-.glow {   font-size: 3.5rem;   font-weight: 700;   color: #ffffff;   position: relative;   letter-spacing: 1px;   text-align: center;   text-shadow:     0 0 5px rgba(124, 92, 255, 0.6),     0 0 15px rgba(124, 92, 255, 0.5),     0 0 30px rgba(124, 92, 255, 0.4);   animation: pulseGlow 3s ease-in-out infinite alternate; }  @keyframes pulseGlow {   from {     text-shadow:       0 0 5px rgba(124, 92, 255, 0.6),       0 0 15px rgba(124, 92, 255, 0.5),       0 0 30px rgba(124, 92, 255, 0.4);   }   to {     text-shadow:       0 0 10px rgba(124, 92, 255, 0.9),       0 0 25px rgba(124, 92, 255, 0.8),       0 0 45px rgba(124, 92, 255, 0.7);   } }
+<h1 class="glow">Kshitij Mishra</h1>
 <p>AI-Focused Quality Analyst | Python • SQL • Data Analysis</p>
 
 <div style="margin-top:30px;">
