@@ -102,3 +102,85 @@ h2 {
     transform: translateY(-3px);
 
 }
+
+/* ===== Logs (Engineering Logs) ===== */
+.section-head { margin-bottom: 16px; }
+.muted { color: rgba(255,255,255,0.65); margin-top: 6px; line-height: 1.5; }
+
+.logs-grid{
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 14px;
+  margin-top: 14px;
+}
+
+@media (max-width: 820px){
+  .logs-grid{ grid-template-columns: 1fr; }
+}
+
+.log-card{
+  display: block;
+  text-decoration: none;
+  border-radius: 16px;
+  padding: 16px 16px 14px;
+  background: rgba(255,255,255,0.06);
+  border: 1px solid rgba(255,255,255,0.10);
+  backdrop-filter: blur(10px);
+  transition: transform .18s ease, background .18s ease, border-color .18s ease;
+}
+
+.log-card:hover{
+  transform: translateY(-2px);
+  background: rgba(255,255,255,0.09);
+  border-color: rgba(255,255,255,0.18);
+}
+
+.log-top{
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.log-title{
+  margin: 0;
+  font-size: 18px;
+  line-height: 1.25;
+  color: #ffffff;
+  letter-spacing: 0.2px;
+}
+
+.log-date{
+  font-size: 12px;
+  color: rgba(255,255,255,0.70);
+  padding: 6px 10px;
+  border-radius: 999px;
+  background: rgba(255,255,255,0.07);
+  border: 1px solid rgba(255,255,255,0.10);
+  white-space: nowrap;
+}
+
+.log-tags{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 12px;
+}
+
+.tag{
+  font-size: 12px;
+  color: rgba(255,255,255,0.85);
+  padding: 6px 10px;
+  border-radius: 999px;
+  background: rgba(120,90,255,0.18);
+  border: 1px solid rgba(120,90,255,0.35);
+}
+
+/* Optional: ghost button */
+.btn.btn-ghost{
+  background: rgba(255,255,255,0.06);
+  border: 1px solid rgba(255,255,255,0.12);
+}
+.btn.btn-ghost:hover{
+  background: rgba(255,255,255,0.10);
+}
