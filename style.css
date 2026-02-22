@@ -1,5 +1,7 @@
 /* ===== BODY ===== */
-
+body {
+  margin: 0;
+}
 body {
     background-color: #020617;
     color: #e2e8f0;
@@ -233,7 +235,7 @@ h2 {
 /* ===== HERO SECTION ===== */
 .hero {
   text-align: left;
-  padding: 60px 20px 40px;
+  padding: 40px 20px 30px;
 }
 
 .hero-subtitle {
