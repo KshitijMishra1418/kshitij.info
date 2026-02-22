@@ -80,37 +80,40 @@ title: Home
     </div>
 </div>
 
-<div class="card">
-    <h3>AI Voice & Output Evaluation System</h3>
-    <p>
-        Designed a structured evaluation framework for AI-generated voice and LLM outputs.
-        Built validation logic to detect hallucinations, logical inconsistencies,
-        and response degradation across large-scale production workflows.
-    </p>
-    <p>
-        Implemented structured scoring metrics and comparative testing pipelines
-        to benchmark model performance across multiple prompt variations.
-    </p>
-    <p>
-        <strong>Tech Focus:</strong> Python • LLM Evaluation • Prompt Testing • Workflow Validation
-    </p>
-</div>
+<div class="section">
+    <h2>Projects</h2>
 
-<div class="card">
-    <h3>Crypto Market Analysis System</h3>
-    <p>
-        Developed a data-driven market analysis workflow to study volatility clusters,
-        liquidity behavior, and price structure patterns across major crypto assets.
-    </p>
-    <p>
-        Used Python-based time series analysis and SQL-backed structured datasets
-        to identify behavioral signals and trend persistence across multi-timeframe data.
-    </p>
-    <p>
-        <strong>Tech Stack:</strong> Python • Pandas • SQL • Data Visualization
-    </p>
-</div>
+    <div class="card">
+        <h3>AI Voice & Output Evaluation System</h3>
+        <ul>
+            <li>Built a structured evaluation framework for AI-generated voice and LLM outputs across production workflows.</li>
+            <li>Designed validation checks to flag hallucinations, logical inconsistencies, and response degradation.</li>
+            <li>Created scoring criteria and comparative test runs to benchmark outputs across prompt variants.</li>
+        </ul>
+        <p><strong>Tech Focus:</strong> Python • LLM Evaluation • Prompt Testing • Workflow Validation</p>
+    </div>
 
+    <div class="card">
+        <h3>Crypto Market Analysis System</h3>
+        <ul>
+            <li>Developed a market analysis workflow to study volatility clusters, liquidity behavior, and price structure.</li>
+            <li>Used Python time-series analysis with SQL-backed datasets to detect behavioral signals across timeframes.</li>
+            <li>Tracked trend persistence and breakout conditions to support structured market decision-making.</li>
+        </ul>
+        <p><strong>Tech Stack:</strong> Python • Pandas • SQL • Data Visualization</p>
+    </div>
+
+    <div class="card">
+        <h3>Fleet Maintenance Prototype (Flask + SQLite)</h3>
+        <ul>
+            <li>Implemented a working prototype web app to simulate fleet maintenance operations end-to-end.</li>
+            <li>One-click monthly task generation and smart assignment logic (max 3 active tasks/tech, depot preference).</li>
+            <li>Task execution flow with before/after photos, parts used, completion status, and signature capture.</li>
+        </ul>
+        <p><strong>Tech Stack:</strong> Python • Flask • SQLite • HTML • CSS</p>
+        <a href="PASTE_YOUR_GITHUB_REPO_LINK" target="_blank" class="btn">View on GitHub</a>
+    </div>
+</div>
 <div class="section">
     <h2>Daily Learning Logs</h2>
 
