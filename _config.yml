@@ -2,3 +2,5 @@ title: Kshitij Mishra
 description: AI Portfolio
 markdown: kramdown
 permalink: /:title/
+timezone: Asia/Kolkata
+future: true
