@@ -184,3 +184,49 @@ h2 {
 .btn.btn-ghost:hover{
   background: rgba(255,255,255,0.10);
 }
+/* ===== Entrance animation ===== */
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+    filter: blur(3px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+    filter: blur(0);
+  }
+}
+
+.log-card{
+  position: relative;
+  overflow: hidden;
+  animation: fadeUp .45s ease both;
+  will-change: transform, opacity;
+}
+
+/* ===== Hover glow effect ===== */
+.log-card::before{
+  content: "";
+  position: absolute;
+  inset: -2px;
+  border-radius: 18px;
+  background: radial-gradient(
+    800px circle at var(--mx, 50%) var(--my, 50%),
+    rgba(124, 92, 255, 0.22),
+    transparent 55%
+  );
+  opacity: 0;
+  transition: opacity .2s ease;
+  pointer-events: none;
+}
+
+.log-card:hover::before{
+  opacity: 1;
+}
+
+.log-card:hover{
+  transform: translateY(-3px);
+  box-shadow: 0 12px 35px rgba(0,0,0,0.35);
+  border-color: rgba(124, 92, 255, 0.35);
+}
