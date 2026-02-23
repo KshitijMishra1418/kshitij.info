@@ -1,113 +1,152 @@
 /* ===== BODY ===== */
-body {
+body{
   margin: 0;
-}
-body {
-    background-color: #020617;
-    color: #e2e8f0;
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto;
-    margin: 0;
+  background-color: #020617;
+  color: #e2e8f0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto;
 }
 
 
 /* ===== MAIN CONTAINER ===== */
-
-.post-container {
-    max-width: 900px;
-    margin: 80px auto;
-    padding-left: 40px;
-    padding-right: 40px;
+.post-container{
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 30px 40px 60px;
 }
 
 
 /* ===== HEADINGS ===== */
-
-h1 {
-    font-size: 48px;
-    font-weight: bold;
-    color: #22d3ee;
+h1{
+  font-size: 48px;
+  font-weight: bold;
 }
 
-h2 {
-    margin-top: 50px;
-    font-size: 28px;
+h2{
+  margin-top: 50px;
+  font-size: 28px;
 }
 
 
-/* ===== BUTTON CONTAINER ===== */
+/* ===== HERO SECTION ===== */
+.hero{
+  text-align: left;
+  padding-top: 10px;
+  padding-bottom: 20px;
+}
 
-.buttons {
-    margin-top: 25px;
-    margin-bottom: 40px;
+.hero-subtitle{
+  margin-top: 12px;
+  font-size: 1.1rem;
+  color: rgba(255,255,255,0.75);
+}
+
+
+/* ===== NAME GLOW (HOVER ONLY) ===== */
+.glow{
+  font-size: 3.5rem;
+  font-weight: 700;
+  color: #ffffff;
+  letter-spacing: 1px;
+  transition: text-shadow 0.3s ease, transform 0.3s ease;
+}
+
+.glow:hover{
+  text-shadow:
+    0 0 10px rgba(124, 92, 255, 0.8),
+    0 0 25px rgba(124, 92, 255, 0.6);
+  transform: scale(1.02);
+}
+
+
+/* ===== HERO BUTTONS ===== */
+.hero-buttons{
+  display: flex;
+  justify-content: flex-start;
+  gap: 15px;
+  margin-top: 25px;
+  flex-wrap: wrap;
 }
 
 
 /* ===== BUTTON STYLE ===== */
-
-.btn {
-
-    display: inline-block;
-
-    background-color: #22d3ee;
-    color: black;
-
-    padding: 12px 22px;
-    margin-right: 15px;
-
-    border-radius: 8px;
-
-    text-decoration: none;
-    font-weight: bold;
-
-    transition: 0.3s;
+.btn{
+  display: inline-block;
+  background-color: #22d3ee;
+  color: black;
+  padding: 12px 22px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: 0.3s ease;
 }
 
-
-/* Hover effect */
-
-.btn:hover {
-
-    background-color: #06b6d4;
-    transform: translateY(-2px);
-
+.btn:hover{
+  background-color: #06b6d4;
+  transform: translateY(-2px);
 }
 
 
 /* ===== FLOATING CONTACT BUTTON ===== */
+.floating-contact{
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  background-color: #22d3ee;
+  color: black;
+  padding: 14px 22px;
+  border-radius: 50px;
+  font-weight: bold;
+  text-decoration: none;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.4);
+  transition: 0.3s;
+}
 
-.floating-contact {
-
-    position: fixed;
-
-    bottom: 30px;
-    right: 30px;
-
-    background-color: #22d3ee;
-    color: black;
-
-    padding: 14px 22px;
-
-    border-radius: 50px;
-
-    font-weight: bold;
-    text-decoration: none;
-
-    box-shadow: 0 5px 20px rgba(0,0,0,0.4);
-
-    transition: 0.3s;
+.floating-contact:hover{
+  background-color: #06b6d4;
+  transform: translateY(-3px);
 }
 
 
-.floating-contact:hover {
-
-    background-color: #06b6d4;
-    transform: translateY(-3px);
-
+/* ===== SECTION SPACING ===== */
+.section{
+  margin-top: 50px;
 }
 
-/* ===== Logs (Engineering Logs) ===== */
-.section-head { margin-bottom: 16px; }
-.muted { color: rgba(255,255,255,0.65); margin-top: 6px; line-height: 1.5; }
+
+/* ===== CARDS ===== */
+.card{
+  background: rgba(255,255,255,0.05);
+  border: 1px solid rgba(255,255,255,0.1);
+  border-radius: 12px;
+  padding: 20px;
+  margin-top: 20px;
+  transition: 0.3s ease;
+}
+
+.card:hover{
+  background: rgba(255,255,255,0.08);
+  border-color: rgba(124,92,255,0.3);
+}
+
+
+/* ===== SKILLS GRID ===== */
+.skills-grid{
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 20px;
+}
+
+
+/* ===== ENGINEERING LOGS ===== */
+.section-head{
+  margin-bottom: 16px;
+}
+
+.muted{
+  color: rgba(255,255,255,0.65);
+  margin-top: 6px;
+  line-height: 1.5;
+}
 
 .logs-grid{
   display: grid;
@@ -116,172 +155,80 @@ h2 {
   margin-top: 14px;
 }
 
-@media (max-width: 820px){
-  .logs-grid{ grid-template-columns: 1fr; }
-}
-
 .log-card{
   display: block;
   text-decoration: none;
   border-radius: 16px;
-  padding: 16px 16px 14px;
+  padding: 16px;
   background: rgba(255,255,255,0.06);
   border: 1px solid rgba(255,255,255,0.10);
-  backdrop-filter: blur(10px);
-  transition: transform .18s ease, background .18s ease, border-color .18s ease;
+  transition: 0.25s ease;
+  color: inherit;
 }
 
 .log-card:hover{
-  transform: translateY(-2px);
-  background: rgba(255,255,255,0.09);
-  border-color: rgba(255,255,255,0.18);
+  transform: translateY(-3px);
+  border-color: rgba(124,92,255,0.4);
+  box-shadow: 0 12px 35px rgba(0,0,0,0.35);
 }
 
 .log-top{
   display: flex;
-  align-items: flex-start;
   justify-content: space-between;
-  gap: 12px;
+  align-items: flex-start;
 }
 
 .log-title{
   margin: 0;
   font-size: 18px;
-  line-height: 1.25;
   color: #ffffff;
-  letter-spacing: 0.2px;
 }
 
 .log-date{
   font-size: 12px;
   color: rgba(255,255,255,0.70);
-  padding: 6px 10px;
+  background: rgba(255,255,255,0.08);
+  padding: 5px 10px;
   border-radius: 999px;
-  background: rgba(255,255,255,0.07);
-  border: 1px solid rgba(255,255,255,0.10);
-  white-space: nowrap;
 }
 
 .log-tags{
   display: flex;
-  flex-wrap: wrap;
   gap: 8px;
-  margin-top: 12px;
+  margin-top: 10px;
 }
 
 .tag{
   font-size: 12px;
-  color: rgba(255,255,255,0.85);
-  padding: 6px 10px;
+  padding: 4px 10px;
   border-radius: 999px;
-  background: rgba(120,90,255,0.18);
-  border: 1px solid rgba(120,90,255,0.35);
+  background: rgba(124,92,255,0.18);
+  border: 1px solid rgba(124,92,255,0.35);
 }
 
-/* Optional: ghost button */
-.btn.btn-ghost{
-  background: rgba(255,255,255,0.06);
-  border: 1px solid rgba(255,255,255,0.12);
-}
-.btn.btn-ghost:hover{
-  background: rgba(255,255,255,0.10);
-}
-/* ===== Entrance animation ===== */
-@keyframes fadeUp {
-  from {
-    opacity: 0;
-    transform: translateY(10px);
-    filter: blur(3px);
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 820px){
+  .skills-grid{
+    grid-template-columns: 1fr;
   }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-    filter: blur(0);
+
+  .logs-grid{
+    grid-template-columns: 1fr;
   }
 }
 
-.log-card{
-  position: relative;
-  overflow: hidden;
-  animation: fadeUp .45s ease both;
-  will-change: transform, opacity;
-}
-
-/* ===== Hover glow effect ===== */
-.log-card::before{
-  content: "";
-  position: absolute;
-  inset: -2px;
-  border-radius: 18px;
-  background: radial-gradient(
-    800px circle at var(--mx, 50%) var(--my, 50%),
-    rgba(124, 92, 255, 0.22),
-    transparent 55%
-  );
-  opacity: 0;
-  transition: opacity .2s ease;
-  pointer-events: none;
-}
-
-.log-card:hover::before{
-  opacity: 1;
-}
-
-.log-card:hover{
-  transform: translateY(-3px);
-  box-shadow: 0 12px 35px rgba(0,0,0,0.35);
-  border-color: rgba(124, 92, 255, 0.35);
-}
-/* ===== HERO SECTION ===== */
-.hero {
-  text-align: left;
-  padding: 30px 20px 30px;
-}
-
-.hero-subtitle {
-  margin-top: 15px;
-  font-size: 1.1rem;
-  color: rgba(255,255,255,0.75);
-}
-
-/* ===== NAME GLOW (Hover Only - Premium) ===== */
-.glow {
-  font-size: 3.5rem;
-  font-weight: 700;
-  color: #ffffff;
-  letter-spacing: 1px;
-  transition: text-shadow 0.3s ease, transform 0.3s ease;
-}
-
-.glow:hover {
-  text-shadow:
-    0 0 10px rgba(124, 92, 255, 0.8),
-    0 0 25px rgba(124, 92, 255, 0.6);
-  transform: scale(1.02);
-}
-
-/* ===== HERO BUTTONS ===== */
-.hero-buttons {
-  display: flex;
-  justify-content: left;
-  gap: 15px;
-  margin-top: 25px;
-  flex-wrap: wrap;
-}
-
-/* Mobile Fix */
-@media (max-width: 600px) {
-  .hero-buttons {
+@media (max-width: 600px){
+  .hero-buttons{
     flex-direction: column;
-    align-items: left;
+    align-items: flex-start;
   }
 
-  .btn {
-    width: 85%;
-    text-align: left;
+  .btn{
+    width: 100%;
   }
 
-  .glow {
+  .glow{
     font-size: 2.3rem;
   }
 }
