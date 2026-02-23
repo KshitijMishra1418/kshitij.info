@@ -62,7 +62,7 @@ title: Home
         <h3>Quality Associate — Tavus AI</h3>
         <p><strong>Jan 2024 – Present</strong></p>
         <ul>
-            <li>EEvaluated AI-generated voice and video outputs across production workflows to ensure quality and reliability.</li>
+            <li>Evaluated AI-generated voice and video outputs across production workflows to ensure quality and reliability.</li>
             <li>Analyzed large volumes of AI outputs to identify logical inconsistencies, hallucinations, and performance gaps.</li>
             <li>Improved system accuracy by providing structured, data-driven feedback to engineering and research teams.</li>
             <li>Tested LLM prompts and retrieval workflows to enhance output consistency and correctness.</li>
