@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Volatility Regimes & Liquidity Structure in Crypto Markets — A System Design Approach"
-date: 2026-02-28
+date: 2026-02-27
 categories: [crypto, trading, data-analysis]
 ---
 
