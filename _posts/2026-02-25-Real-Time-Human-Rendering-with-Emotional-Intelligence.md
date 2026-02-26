@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Real-Time Human Rendering with Emotional Intelligence — An Engineering Deep Dive"
-date: 2026-02-26
+date: 2026-02-25
 categories: [ai, computer-vision, system-design]
 ---
 
