@@ -352,3 +352,23 @@ hr{
     text-align: left;
   }
 }
+.logs-cta {
+  text-align: center;
+  margin-top: 28px;
+}
+
+.view-all-notes {
+  display: inline-block;
+  padding: 12px 20px;
+  border-radius: 12px;
+  text-decoration: none;
+  font-weight: 600;
+  color: #fff;
+  background: linear-gradient(90deg, #7c5cff, #4da3ff);
+  transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+.view-all-notes:hover {
+  opacity: 0.92;
+  transform: translateY(-1px);
+}
