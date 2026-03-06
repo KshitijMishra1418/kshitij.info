@@ -10,15 +10,14 @@ permalink: /notes/
     <p class="muted">A collection of short technical notes on systems, AI, data, and crypto markets.</p>
   </div>
 
-  <div class="logs-grid">
+  <div class="notes-list">
     {% for post in site.posts %}
-      <a class="log-card" href="{{ post.url | relative_url }}">
-        <div class="log-top">
-          <div class="log-title-wrap">
-            <h3 class="log-title">{{ post.title }}</h3>
-          </div>
-          <span class="log-date">{{ post.date | date: "%b %d, %Y" }}</span>
+      <a class="note-item" href="{{ post.url | relative_url }}">
+        <div class="note-meta">
+          <span class="note-date">{{ post.date | date: "%b %d, %Y" }}</span>
         </div>
+
+        <h3 class="note-title">{{ post.title }}</h3>
 
         {% if post.categories %}
           <div class="log-tags">
