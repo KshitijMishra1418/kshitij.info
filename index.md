@@ -106,8 +106,8 @@ title: Home
         </ul>
         <p><strong>Tech Stack:</strong> Python • Pandas • SQL • Data Visualization</p>
     </div>
-
 </div>
+
 <div class="section">
   <div class="section-head">
     <h2>Engineering Logs</h2>
@@ -115,68 +115,34 @@ title: Home
   </div>
 
   <div class="logs-grid">
-  {% for post in site.posts limit:6 %}
-    <a class="log-card" href="{{ post.url | relative_url }}"
-       style="animation-delay: {{ forloop.index0 | times: 80 }}ms;">
-      <div class="log-top">
-        <div class="log-title-wrap">
-          <h3 class="log-title">
-            {{ post.title }}
-            {% if forloop.first %}
-              <span class="latest-badge">Latest</span>
-            {% endif %}
-          </h3>
+    {% for post in site.posts limit:6 %}
+      <a class="log-card" href="{{ post.url | relative_url }}"
+         style="animation-delay: {{ forloop.index0 | times: 80 }}ms;">
+        <div class="log-top">
+          <div class="log-title-wrap">
+            <h3 class="log-title">
+              {{ post.title }}
+              {% if forloop.first %}
+                <span class="latest-badge">Latest</span>
+              {% endif %}
+            </h3>
+          </div>
+
+          <span class="log-date">{{ post.date | date: "%b %d, %Y" }}</span>
         </div>
 
-        <div class="section">
-  <div class="section-head">
-    <h2>Engineering Logs</h2>
-    <p class="muted">Short notes on systems.</p>
-  </div>
-
-  <div class="logs-grid">
-  {% for post in site.posts limit:6 %}
-    <a class="log-card" href="{{ post.url | relative_url }}"
-       style="animation-delay: {{ forloop.index0 | times: 80 }}ms;">
-      <div class="log-top">
-        <div class="log-title-wrap">
-          <h3 class="log-title">
-            {{ post.title }}
-            {% if forloop.first %}
-              <span class="latest-badge">Latest</span>
-            {% endif %}
-          </h3>
-        </div>
-
-        <span class="log-date">{{ post.date | date: "%b %d, %Y" }}</span>
-      </div>
-
-      {% if post.categories %}
-        <div class="log-tags">
-          {% for cat in post.categories limit:3 %}
-            <span class="tag">{{ cat }}</span>
-          {% endfor %}
-        </div>
-      {% endif %}
-    </a>
-  {% endfor %}
+        {% if post.categories %}
+          <div class="log-tags">
+            {% for cat in post.categories limit:3 %}
+              <span class="tag">{{ cat }}</span>
+            {% endfor %}
+          </div>
+        {% endif %}
+      </a>
+    {% endfor %}
   </div>
 
   <div class="logs-cta">
     <a href="/notes/" class="view-all-notes">View All Notes →</a>
   </div>
-</div>
-
-        <span class="log-date">{{ post.date | date: "%b %d, %Y" }}</span>
-      </div>
-
-      {% if post.categories %}
-        <div class="log-tags">
-          {% for cat in post.categories limit:3 %}
-            <span class="tag">{{ cat }}</span>
-          {% endfor %}
-        </div>
-      {% endif %}
-    </a>
-  {% endfor %}
 </div>
