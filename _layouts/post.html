@@ -1,1 +1,18 @@
-
+---
+layout: default
+---
+<main class="post-main">
+  <div class="post-container">
+    <a href="/" class="post-back">← Back</a>
+    <article>
+      <header class="post-header">
+        <div class="post-meta">
+          <time>{{ page.date | date: "%B %d, %Y" }}</time>
+          {% for tag in page.tags %}<span class="post-tag">{{ tag }}</span>{% endfor %}
+        </div>
+        <h1>{{ page.title }}</h1>
+      </header>
+      <div class="post-body">{{ content }}</div>
+    </article>
+  </div>
+</main>
