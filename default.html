@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>{% if page.title and page.title != "Home" %}{{ page.title }} — {% endif %}Kshitij Mishra · AI Quality Analyst</title>
+<meta name="description" content="Kshitij Mishra — AI Quality Analyst | LLM Evaluation | Data Analyst | Prompt Engineer. 2+ years at Tavus AI. Python, SQL, Data Analysis."/>
+<meta property="og:title" content="Kshitij Mishra — AI Quality Analyst"/>
+<meta property="og:description" content="2+ years evaluating production LLM and voice AI systems. Reduced hallucination rates by ~30%. Python · SQL · LLM Evaluation · Prompt Engineering."/>
+<meta property="og:url" content="https://kshitij.info"/>
+<meta property="og:type" content="website"/>
+<meta name="twitter:card" content="summary"/>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet"/>
+<link rel="stylesheet" href="/style.css"/>
+</head>
+<body>
+
+<header id="nav">
+  <a class="nav-logo" href="/">KM<span> · kshitij.info</span></a>
+  <nav class="nav-links">
+    <a href="#about">About</a>
+    <a href="#experience">Experience</a>
+    <a href="#projects">Projects</a>
+    <a href="#writing">Writing</a>
+    <a href="#contact">Contact</a>
+  </nav>
+  <a class="nav-resume" href="/Kshitij_Mishra_Resume.pdf" target="_blank">Resume ↓</a>
+  <button class="nav-burger" id="burger" aria-label="Menu">
+    <span></span><span></span><span></span>
+  </button>
+</header>
+
+<div class="mobile-nav" id="mobileNav">
+  <a href="#about" onclick="closeMobileNav()">About</a>
+  <a href="#experience" onclick="closeMobileNav()">Experience</a>
+  <a href="#projects" onclick="closeMobileNav()">Projects</a>
+  <a href="#writing" onclick="closeMobileNav()">Writing</a>
+  <a href="#contact" onclick="closeMobileNav()">Contact</a>
+  <a href="/Kshitij_Mishra_Resume.pdf" target="_blank">Resume ↓</a>
+</div>
+
+{{ content }}
+
+<footer>
+  <div class="footer-inner">
+    <span class="footer-name">Kshitij Mishra</span>
+    <div class="footer-links">
+      <a href="https://linkedin.com/in/kshitij-mishra-0a5758197" target="_blank">LinkedIn</a>
+      <a href="https://github.com/KshitijMishra1418" target="_blank">GitHub</a>
+      <a href="mailto:mkshitij007@gmail.com">Email</a>
+    </div>
+    <span class="footer-copy">© 2026</span>
+  </div>
+</footer>
+
+<script src="/script.js"></script>
+</body>
+</html>
