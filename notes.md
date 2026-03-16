@@ -4,29 +4,32 @@ title: Engineering Notes
 permalink: /notes/
 ---
 
-<div class="section">
-  <div class="section-head">
-    <h2>Engineering Notes</h2>
-    <p class="muted">A collection of short technical notes on systems, AI, data, and crypto markets.</p>
-  </div>
+<section class="notes-page">
+  <div class="container">
+    <div class="section-label">Writing</div>
+    <h1 class="section-title">Engineering Notes</h1>
+    <p class="notes-intro">
+      Short technical notes on AI systems, data pipelines, crypto market structure, and engineering workflows.
+    </p>
 
-  <div class="notes-list">
-    {% for post in site.posts %}
-      <a class="note-item" href="{{ post.url | relative_url }}">
-        <div class="note-meta">
-          <span class="note-date">{{ post.date | date: "%b %d, %Y" }}</span>
+    <div class="notes-list-page">
+      {% assign sorted_posts = site.posts | sort: 'date' | reverse %}
+      {% for post in sorted_posts %}
+      <a class="note-row" href="{{ post.url }}">
+        <div class="note-row-left">
+          <time class="note-date">{{ post.date | date: "%b %d, %Y" }}</time>
+          <h2 class="note-title">{{ post.title }}</h2>
+          {% if post.tags %}
+          <div class="note-tags">
+            {% for tag in post.tags %}
+            <span>{{ tag }}</span>
+            {% endfor %}
+          </div>
+          {% endif %}
         </div>
-
-        <h3 class="note-title">{{ post.title }}</h3>
-
-        {% if post.categories %}
-        <div class="log-tags">
-          {% for cat in post.categories limit:3 %}
-            <span class="tag">{{ cat }}</span>
-          {% endfor %}
-        </div>
-        {% endif %}
+        <span class="note-arrow">→</span>
       </a>
-    {% endfor %}
+      {% endfor %}
+    </div>
   </div>
-</div>
+</section>
