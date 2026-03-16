@@ -369,6 +369,111 @@ section:last-child { border-bottom: none; }
 .view-more:hover { background: var(--bglow); box-shadow: 0 0 20px rgba(79,142,247,0.2); transform: translateY(-1px); }
 .view-more svg { width: 13px; height: 13px; stroke: var(--blue); fill: none; stroke-width: 2; transition: transform .2s; }
 .view-more:hover svg { transform: translateX(3px); }
+/* ─── NOTES PAGE ─── */
+.notes-page {
+  padding: 92px 0 64px;
+  min-height: calc(100vh - 56px);
+}
+
+.notes-intro {
+  font-size: 14px;
+  color: var(--tx2);
+  line-height: 1.8;
+  max-width: 720px;
+  margin-top: -20px;
+  margin-bottom: 28px;
+}
+
+.notes-list-page {
+  display: flex;
+  flex-direction: column;
+  border-top: 1px solid var(--bd);
+}
+
+.note-row {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 20px 0;
+  border-bottom: 1px solid var(--bd);
+  transition: padding-left .18s ease, border-color .2s ease;
+}
+
+.note-row:hover {
+  padding-left: 8px;
+  border-color: var(--bd2);
+}
+
+.note-row-left {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  min-width: 0;
+}
+
+.note-date {
+  font-family: var(--mono);
+  font-size: 11px;
+  color: var(--tx3);
+}
+
+.note-title {
+  font-size: 16px;
+  font-weight: 500;
+  color: var(--tx);
+  line-height: 1.45;
+}
+
+.note-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.note-tags span {
+  font-family: var(--mono);
+  font-size: 9px;
+  color: var(--tx3);
+  background: rgba(79,142,247,0.05);
+  padding: 2px 7px;
+  border-radius: 3px;
+  border: 1px solid var(--bd);
+}
+
+.note-arrow {
+  font-size: 16px;
+  color: var(--tx3);
+  flex-shrink: 0;
+  transition: transform .2s ease, color .2s ease;
+  margin-top: 2px;
+}
+
+.note-row:hover .note-arrow {
+  color: var(--blue);
+  transform: translateX(4px);
+}
+
+@media (max-width: 768px) {
+  .notes-page {
+    padding: 76px 0 48px;
+  }
+
+  .notes-intro {
+    margin-top: -12px;
+    margin-bottom: 22px;
+    font-size: 13px;
+  }
+
+  .note-row {
+    padding: 16px 0;
+  }
+
+  .note-title {
+    font-size: 15px;
+  }
+}
+
 
 /* ─── CONTACT ─── */
 .contact-wrap {
