@@ -34,28 +34,38 @@ title: Home
           <a class="btn-ghost" href="https://github.com/KshitijMishra1418" target="_blank">GitHub</a>
         </div>
       </div>
+
       <div class="hero-right">
         <div class="stats-card">
           <div class="stat">
             <span class="stat-num">2<span class="stat-plus">+</span></span>
             <span class="stat-label">Years experience</span>
           </div>
+
           <div class="stat-divider"></div>
+
           <div class="stat">
             <span class="stat-num">500<span class="stat-plus">+</span></span>
             <span class="stat-label">Outputs / month</span>
           </div>
+
           <div class="stat-divider"></div>
+          <div class="stat-divider"></div>
+          <div class="stat-divider"></div>
+
           <div class="stat">
-  <span class="stat-num">20<span class="stat-plus">%</span></span>
-  <span class="stat-label">Faster turnaround</span>
-</div>
-<div class="stat-divider"></div>
-<div class="stat">
-  <span class="stat-num">30<span class="stat-plus">%</span></span>
-  <span class="stat-label">Hallucination reduction</span>
-</div>
+            <span class="stat-num">30<span class="stat-plus">%</span></span>
+            <span class="stat-label">Hallucination reduction</span>
+          </div>
+
+          <div class="stat-divider"></div>
+
+          <div class="stat">
+            <span class="stat-num">20<span class="stat-plus">%</span></span>
+            <span class="stat-label">Faster turnaround</span>
+          </div>
         </div>
+
         <div class="tech-stack">
           <span class="stack-label">Core stack</span>
           <div class="stack-tags">
@@ -108,6 +118,7 @@ title: Home
           prompt engineering</strong> where structured evaluation thinking matters.
         </p>
       </div>
+
       <div class="about-sidebar">
         <div class="info-block">
           <div class="info-title">Currently upskilling</div>
@@ -118,12 +129,14 @@ title: Home
             <li>Kaggle competitions</li>
           </ul>
         </div>
+
         <div class="info-block">
           <div class="info-title">Education</div>
           <div class="edu-degree">B.Tech &mdash; Electrical &amp; Electronics Engineering</div>
           <div class="edu-school">Dr. A.P.J. Abdul Kalam Technical University</div>
           <div class="edu-meta">2017 &ndash; 2021 &middot; 75.6%</div>
         </div>
+
         <div class="info-block">
           <div class="info-title">Tools</div>
           <div class="tools-row">
@@ -313,6 +326,7 @@ title: Home
           </div>
           <span class="contact-arrow">→</span>
         </a>
+
         <a class="contact-link" href="https://linkedin.com/in/kshitij-mishra-0a5758197" target="_blank">
           <div class="contact-icon">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
@@ -323,6 +337,7 @@ title: Home
           </div>
           <span class="contact-arrow">→</span>
         </a>
+
         <a class="contact-link" href="https://github.com/KshitijMishra1418" target="_blank">
           <div class="contact-icon">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 00-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0020 4.77 5.07 5.07 0 0019.91 1S18.73.65 16 2.48a13.38 13.38 0 00-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 005 4.77a5.44 5.44 0 00-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 009 18.13V22"/></svg>
@@ -333,6 +348,7 @@ title: Home
           </div>
           <span class="contact-arrow">→</span>
         </a>
+
         <a class="contact-link" href="/Kshitij_Mishra_Resume.pdf" target="_blank">
           <div class="contact-icon">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="12" y1="18" x2="12" y2="12"/><line x1="9" y1="15" x2="15" y2="15"/></svg>
