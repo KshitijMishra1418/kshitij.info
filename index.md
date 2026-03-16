@@ -47,14 +47,14 @@ title: Home
           </div>
           <div class="stat-divider"></div>
           <div class="stat">
-            <span class="stat-num">30<span class="stat-plus">%</span></span>
-            <span class="stat-label">Hallucination reduction</span>
-          </div>
-          <div class="stat-divider"></div>
-          <div class="stat">
-            <span class="stat-num">20<span class="stat-plus">%</span></span>
-            <span class="stat-label">Faster turnaround</span>
-          </div>
+  <span class="stat-num">20<span class="stat-plus">%</span></span>
+  <span class="stat-label">Faster turnaround</span>
+</div>
+<div class="stat-divider"></div>
+<div class="stat">
+  <span class="stat-num">30<span class="stat-plus">%</span></span>
+  <span class="stat-label">Hallucination reduction</span>
+</div>
         </div>
         <div class="tech-stack">
           <span class="stack-label">Core stack</span>
