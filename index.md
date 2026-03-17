@@ -223,51 +223,110 @@ title: Home
   <div class="container">
     <div class="section-label">03 &mdash; Projects</div>
     <h2 class="section-title">Things I've built</h2>
+
     <div class="projects-grid">
 
+      <!-- Project 1 -->
       <div class="project-card project-card--featured reveal">
         <div class="project-card-top">
           <div class="project-num">01</div>
           <a href="https://github.com/KshitijMishra1418" target="_blank" class="project-link">↗</a>
         </div>
+
         <h3 class="project-title">AI Voice &amp; Output<br>Evaluation Framework</h3>
-        <p class="project-desc">End-to-end evaluation framework for AI-generated voice and LLM outputs. Automated validation checks flag hallucinations, logical inconsistencies, and quality degradation. Scoring criteria improved output reliability by <strong>25%</strong>.</p>
+
+        <p class="project-desc">
+          Built an evaluation framework for LLM and voice AI outputs with structured scoring for hallucination detection,
+          logical consistency, and response quality. Improved evaluation reliability by <strong>25%</strong>.
+        </p>
+
+        <div class="project-links">
+          <a href="https://github.com/KshitijMishra1418" target="_blank" class="project-cta project-cta--ghost">
+            GitHub →
+          </a>
+        </div>
+
         <div class="project-tags">
           <span>Python</span><span>LLM Evaluation</span><span>Prompt Testing</span><span>Workflow Validation</span>
         </div>
       </div>
 
+      <!-- Project 2 -->
       <div class="project-card reveal">
         <div class="project-card-top">
           <div class="project-num">02</div>
-          <a href="https://github.com/KshitijMishra1418" target="_blank" class="project-link">↗</a>
+          <a href="https://crypto-analysis-km.streamlit.app" target="_blank" class="project-link">↗</a>
         </div>
+
         <h3 class="project-title">Crypto Market<br>Analysis System</h3>
-        <p class="project-desc">Python-based market analysis pipeline studying volatility clusters, liquidity behavior, and price structure. Time-series analysis with SQL-backed datasets detects behavioral signals and breakout conditions.</p>
+
+        <p class="project-desc">
+          Built a Streamlit-based crypto analytics system to track volatility regimes, trend structure,
+          and price behavior using time-series analysis and Python data pipelines.
+        </p>
+
+        <div class="project-links">
+          <a href="https://crypto-analysis-km.streamlit.app" target="_blank" class="project-cta">
+            ↗ Live Demo
+          </a>
+          <a href="https://github.com/KshitijMishra1418/crypto-market-analysis" target="_blank" class="project-cta project-cta--ghost">
+            GitHub →
+          </a>
+        </div>
+
         <div class="project-tags">
-          <span>Python</span><span>Pandas</span><span>SQL</span><span>NumPy</span><span>Data Viz</span>
+          <span>Python</span><span>Streamlit</span><span>Pandas</span><span>SQL</span><span>Data Viz</span>
         </div>
       </div>
 
+      <!-- Project 3 -->
       <div class="project-card reveal">
         <div class="project-card-top">
           <div class="project-num">03</div>
           <a href="https://github.com/KshitijMishra1418/automated-fleet-maintenance-management-system" target="_blank" class="project-link">↗</a>
         </div>
+
         <h3 class="project-title">Automated Fleet<br>Maintenance System</h3>
-        <p class="project-desc">Working model for automated fleet maintenance management — scheduling, tracking, and alerting for vehicle maintenance events. Demonstrates data pipeline design and Python automation.</p>
+
+        <p class="project-desc">
+          Designed a Python-based system for scheduling, tracking, and alerting vehicle maintenance events,
+          demonstrating workflow automation and backend system design.
+        </p>
+
+        <div class="project-links">
+          <a href="https://github.com/KshitijMishra1418/automated-fleet-maintenance-management-system" target="_blank" class="project-cta project-cta--ghost">
+            GitHub →
+          </a>
+        </div>
+
         <div class="project-tags">
           <span>Python</span><span>System Design</span><span>Automation</span>
         </div>
       </div>
 
+      <!-- Project 4 -->
       <div class="project-card reveal">
         <div class="project-card-top">
           <div class="project-num">04</div>
           <a href="https://kshitij.info" target="_blank" class="project-link">↗</a>
         </div>
+
         <h3 class="project-title">kshitij.info</h3>
-        <p class="project-desc">This portfolio and engineering blog — deployed on GitHub Pages with Jekyll. Regularly publishing technical articles on AI evaluation, crypto microstructure, and data pipeline design.</p>
+
+        <p class="project-desc">
+          Personal portfolio and engineering blog built with Jekyll and GitHub Pages,
+          focused on AI systems, data pipelines, and quantitative analysis.
+        </p>
+
+        <div class="project-links">
+          <a href="https://kshitij.info" target="_blank" class="project-cta">
+            ↗ Live Site
+          </a>
+          <a href="https://github.com/KshitijMishra1418/kshitij.info" target="_blank" class="project-cta project-cta--ghost">
+            GitHub →
+          </a>
+        </div>
+
         <div class="project-tags">
           <span>Jekyll</span><span>HTML</span><span>CSS</span><span>GitHub Pages</span>
         </div>
