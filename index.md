@@ -246,7 +246,7 @@ title: Home
       Live Demo
     </a>
 
-    <a href="https://github.com/KshitijMishra1418/kshitij.info" target="_blank" class="project-cta project-cta--ghost">
+    <a href="https://github.com/KshitijMishra1418/ai-voice-evaluation" target="_blank" class="project-cta project-cta--ghost">
       Code →
     </a>
   </div>
