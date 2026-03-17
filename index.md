@@ -253,31 +253,33 @@ title: Home
 
       <!-- Project 2 -->
       <div class="project-card reveal">
-        <div class="project-card-top">
-          <div class="project-num">02</div>
-          <a href="https://crypto-analysis-km.streamlit.app" target="_blank" class="project-link">↗</a>
-        </div>
+  <div class="project-card-top">
+    <div class="project-num">02</div>
+    <a href="https://crypto-analysis-km.streamlit.app" target="_blank" class="project-link">↗</a>
+  </div>
 
-        <h3 class="project-title">Crypto Market<br>Analysis System</h3>
+  <h3 class="project-title">Crypto Market<br>Analysis System</h3>
 
-        <p class="project-desc">
-          Built a Streamlit-based crypto analytics system to track volatility regimes, trend structure,
-          and price behavior using time-series analysis and Python data pipelines.
-        </p>
+  <p class="project-desc">
+    Built a Streamlit-based crypto analytics system to track volatility regimes, trend structure,
+    and price behavior using time-series analysis and Python data pipelines.
+  </p>
 
-        <div class="project-links">
-          <a href="https://crypto-analysis-km.streamlit.app" target="_blank" class="project-cta">
-            ↗ Live Demo
-          </a>
-          <a href="https://github.com/KshitijMishra1418/crypto-market-analysis" target="_blank" class="project-cta project-cta--ghost">
-            GitHub →
-          </a>
-        </div>
+  <div class="project-links">
+    <a href="https://crypto-analysis-km.streamlit.app" target="_blank" class="project-cta project-cta--live">
+      <span class="live-badge"></span>
+      Live Demo
+    </a>
 
-        <div class="project-tags">
-          <span>Python</span><span>Streamlit</span><span>Pandas</span><span>SQL</span><span>Data Viz</span>
-        </div>
-      </div>
+    <a href="https://github.com/KshitijMishra1418/crypto-market-analysis" target="_blank" class="project-cta project-cta--ghost">
+      Code →
+    </a>
+  </div>
+
+  <div class="project-tags">
+    <span>Python</span><span>Streamlit</span><span>Pandas</span><span>SQL</span><span>Data Viz</span>
+  </div>
+</div>
 
       <!-- Project 3 -->
       <div class="project-card reveal">
