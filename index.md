@@ -227,29 +227,37 @@ title: Home
     <div class="projects-grid">
 
       <!-- Project 1 -->
-      <div class="project-card project-card--featured reveal">
-        <div class="project-card-top">
-          <div class="project-num">01</div>
-          <a href="https://github.com/KshitijMishra1418" target="_blank" class="project-link">↗</a>
-        </div>
+     <div class="project-card project-card--featured reveal">
+  <div class="project-card-top">
+    <div class="project-num">01</div>
+    <a href="https://voice-eval-km.streamlit.app/" target="_blank" class="project-link">↗</a>
+  </div>
 
-        <h3 class="project-title">AI Voice &amp; Output<br>Evaluation Framework</h3>
+  <h3 class="project-title">AI Voice &amp; Output<br>Evaluation Framework</h3>
 
-        <p class="project-desc">
-          Built an evaluation framework for LLM and voice AI outputs with structured scoring for hallucination detection,
-          logical consistency, and response quality. Improved evaluation reliability by <strong>25%</strong>.
-        </p>
+  <p class="project-desc">
+    Built a production-style evaluation system for LLM and voice AI outputs with structured scoring for hallucination detection,
+    logical consistency, and response quality. Designed scoring pipelines and evaluation workflows improving output reliability by <strong>25%</strong>.
+  </p>
 
-        <div class="project-links">
-          <a href="https://github.com/KshitijMishra1418" target="_blank" class="project-cta project-cta--ghost">
-            GitHub →
-          </a>
-        </div>
+  <div class="project-links">
+    <a href="https://voice-eval-km.streamlit.app/" target="_blank" class="project-cta project-cta--live">
+      <span class="live-badge"></span>
+      Live Demo
+    </a>
 
-        <div class="project-tags">
-          <span>Python</span><span>LLM Evaluation</span><span>Prompt Testing</span><span>Workflow Validation</span>
-        </div>
-      </div>
+    <a href="https://github.com/KshitijMishra1418/kshitij.info" target="_blank" class="project-cta project-cta--ghost">
+      Code →
+    </a>
+  </div>
+
+  <div class="project-tags">
+    <span>Python</span>
+    <span>LLM Evaluation</span>
+    <span>Prompt Testing</span>
+    <span>Workflow Validation</span>
+  </div>
+</div>
 
       <!-- Project 2 -->
       <div class="project-card reveal">
