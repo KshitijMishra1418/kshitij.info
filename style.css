@@ -407,6 +407,106 @@ section:last-child { border-bottom: none; }
 .project-card:hover .project-desc {
   color: var(--tx);
 }
+.project-links {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+  margin-top: 10px;
+  margin-bottom: 6px;
+  align-items: center;
+}
+
+.project-cta {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 14px;
+  border-radius: 6px;
+  font-family: var(--mono);
+  font-size: 11px;
+  letter-spacing: .05em;
+  font-weight: 500;
+  transition: all .2s ease;
+}
+
+.project-cta--live {
+  color: #fff;
+  background: linear-gradient(135deg, var(--blue), var(--blue3));
+  border: 1px solid rgba(79,142,247,0.28);
+  box-shadow: 0 0 18px rgba(79,142,247,0.22);
+}
+
+.project-cta--live:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 0 26px rgba(79,142,247,0.38);
+}
+
+.project-cta--ghost {
+  background: transparent;
+  color: var(--tx2);
+  border: 1px solid var(--bd);
+  box-shadow: none;
+}
+
+.project-cta--ghost:hover {
+  color: var(--blue);
+  border-color: var(--bd2);
+  background: rgba(79,142,247,0.06);
+}
+
+.live-badge {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #4ade80;
+  box-shadow: 0 0 10px rgba(74, 222, 128, 0.8);
+  position: relative;
+  flex-shrink: 0;
+}
+
+.live-badge::after {
+  content: "";
+  position: absolute;
+  inset: -4px;
+  border-radius: 50%;
+  border: 1px solid rgba(74, 222, 128, 0.55);
+  animation: livePulse 1.8s ease-out infinite;
+}
+
+@keyframes livePulse {
+  0% {
+    transform: scale(0.8);
+    opacity: 0.9;
+  }
+  70% {
+    transform: scale(1.8);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1.8);
+    opacity: 0;
+  }
+}
+
+/* glow only when hovering live demo */
+.project-card {
+  position: relative;
+  overflow: hidden;
+}
+
+.project-card::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(circle at 70% 35%, rgba(79,142,247,0.14), transparent 38%);
+  opacity: 0;
+  transition: opacity .25s ease;
+  pointer-events: none;
+}
+
+.project-card:has(.project-cta--live:hover)::after {
+  opacity: 1;
+}
 
 /* ─── WRITING ─── */
 .posts-list { display: flex; flex-direction: column; margin-bottom: 20px; }
