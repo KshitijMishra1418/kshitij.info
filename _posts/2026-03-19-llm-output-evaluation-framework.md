@@ -71,9 +71,3 @@ Designed and implemented a structured evaluation framework to quantify LLM outpu
 - Structured scoring datasets  
 - Prompt-wise performance comparison  
 - Regression tracking across evaluation runs  
-
-## Next Steps
-
-- Integrate LLM-as-a-judge for automated scoring  
-- Add semantic similarity scoring (embedding-based evaluation)  
-- Build real-time evaluation pipeline for live systems  
