@@ -135,9 +135,11 @@ section:last-child { border-bottom: none; }
   margin-bottom: 20px; width: fit-content;
 }
 .status-dot {
-  width: 6px; height: 6px; border-radius: 50%;
-  background: var(--cyan); box-shadow: 0 0 8px var(--cyan);
-  animation: blink 2s infinite;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--cyan);
+  box-shadow: 0 0 8px var(--cyan);
 }
 @keyframes blink { 0%,100%{opacity:1} 50%{opacity:.25} }
 
