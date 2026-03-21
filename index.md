@@ -303,7 +303,12 @@ title: Home
         </p>
         <div class="project-links">
           <a href="https://retention-dashboard-km.streamlit.app" target="_blank" class="project-cta project-cta--live">
-            ● Live Demo
+            Live Demo
+          </a>
+          <a href="https://github.com/KshitijMishra1418/user-retention-dashboard" target="_blank" class="project-cta project-cta--ghost">
+            Code →
+          </a>
+        </div>
           </a>
           <a href="https://github.com/KshitijMishra1418/user-retention-dashboard" target="_blank" class="project-cta project-cta--ghost">
             Code →
