@@ -352,7 +352,6 @@ title: Home
   </div>
 </div>
   </div>
-</section>
 
 <!-- WRITING -->
 <section id="writing">
