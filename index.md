@@ -351,6 +351,9 @@ title: Home
     <span>Jekyll</span><span>HTML</span><span>CSS</span><span>GitHub Pages</span>
   </div>
 </div>
+    </div>
+  </div>
+</section>
 
 <!-- WRITING -->
 <section id="writing">
