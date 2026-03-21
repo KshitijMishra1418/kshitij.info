@@ -306,6 +306,7 @@ title: Home
 
   <div class="project-links">
     <a href="https://retention-dashboard-km.streamlit.app" target="_blank" class="project-cta project-cta--live">
+      <span class="live-badge"></span>
       Live Demo
     </a>
     <a href="https://github.com/KshitijMishra1418/user-retention-dashboard" target="_blank" class="project-cta project-cta--ghost">
@@ -322,35 +323,34 @@ title: Home
   </div>
 </div>
 
-      <!-- Project 4 -->
-      <div class="project-card reveal">
-        <div class="project-card-top">
-          <div class="project-num">04</div>
-          <a href="https://kshitij.info" target="_blank" class="project-link">↗</a>
-        </div>
+<!-- Project 4 -->
+<div class="project-card reveal">
+  <div class="project-card-top">
+    <div class="project-num">04</div>
+    <a href="https://kshitij.info" target="_blank" class="project-link">↗</a>
+  </div>
 
-        <h3 class="project-title">kshitij.info</h3>
+  <h3 class="project-title">kshitij.info</h3>
 
-        <p class="project-desc">
-          Personal portfolio and engineering blog built with Jekyll and GitHub Pages,
-          focused on AI systems, data pipelines, and quantitative analysis.
-        </p>
+  <p class="project-desc">
+    Personal portfolio and engineering blog built with Jekyll and GitHub Pages,
+    focused on AI systems, data pipelines, and quantitative analysis.
+  </p>
 
-        <div class="project-links">
-          <a href="https://kshitij.info" target="_blank" class="project-cta">
-            ↗ Live Site
-          </a>
-          <a href="https://github.com/KshitijMishra1418/kshitij.info" target="_blank" class="project-cta project-cta--ghost">
-            GitHub →
-          </a>
-        </div>
+  <div class="project-links">
+    <a href="https://kshitij.info" target="_blank" class="project-cta project-cta--live">
+      <span class="live-badge"></span>
+      Live Site
+    </a>
+    <a href="https://github.com/KshitijMishra1418/kshitij.info" target="_blank" class="project-cta project-cta--ghost">
+      GitHub →
+    </a>
+  </div>
 
-        <div class="project-tags">
-          <span>Jekyll</span><span>HTML</span><span>CSS</span><span>GitHub Pages</span>
-        </div>
-      </div>
-
-    </div>
+  <div class="project-tags">
+    <span>Jekyll</span><span>HTML</span><span>CSS</span><span>GitHub Pages</span>
+  </div>
+</div>
   </div>
 </section>
 
