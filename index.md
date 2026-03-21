@@ -289,35 +289,39 @@ title: Home
       </div>
 
      <!-- Project 3 -->
-      <div class="project-card reveal">
-        <div class="project-card-top">
-          <div class="project-num">03</div>
-          <a href="https://retention-dashboard-km.streamlit.app" target="_blank" class="project-link">↗</a>
-        </div>
-        <h3 class="project-title">User Failure &<br>Retention Dashboard</h3>
-        <p class="project-desc">
-          Built a data-driven dashboard to analyze user failure patterns and their
-          impact on retention in AI-based workflows. Tracked retry cycles, drop-off
-          points, and cohort retention across 500 users to identify key bottlenecks
-          affecting user success and experience.
-        </p>
-        <div class="project-links">
-          <a href="https://retention-dashboard-km.streamlit.app" target="_blank" class="project-cta project-cta--live">
-            Live Demo
-          </a>
-          <a href="https://github.com/KshitijMishra1418/user-retention-dashboard" target="_blank" class="project-cta project-cta--ghost">
-            Code →
-          </a>
-        </div>
-          </a>
-          <a href="https://github.com/KshitijMishra1418/user-retention-dashboard" target="_blank" class="project-cta project-cta--ghost">
-            Code →
-          </a>
-        </div>
-        <div class="project-tags">
-          <span>Python</span><span>Streamlit</span><span>Pandas</span><span>Seaborn</span><span>Data Analysis</span>
-        </div>
-      </div>
+<div class="project-card reveal">
+  <div class="project-card-top">
+    <div class="project-num">03</div>
+    <a href="https://retention-dashboard-km.streamlit.app" target="_blank" class="project-link">↗</a>
+  </div>
+
+  <h3 class="project-title">User Failure &<br>Retention Dashboard</h3>
+
+  <p class="project-desc">
+    Built a data-driven dashboard to analyze user failure patterns and their
+    impact on retention in AI-based workflows. Tracked retry cycles, drop-off
+    points, and cohort retention across 500 users to identify key bottlenecks
+    affecting user success and experience.
+  </p>
+
+  <div class="project-links">
+    <a href="https://retention-dashboard-km.streamlit.app" target="_blank" class="project-cta project-cta--live">
+      Live Demo
+    </a>
+    <a href="https://github.com/KshitijMishra1418/user-retention-dashboard" target="_blank" class="project-cta project-cta--ghost">
+      Code →
+    </a>
+  </div>
+
+  <div class="project-tags">
+    <span>Python</span>
+    <span>Streamlit</span>
+    <span>Pandas</span>
+    <span>Seaborn</span>
+    <span>Data Analysis</span>
+  </div>
+</div>
+
       <!-- Project 4 -->
       <div class="project-card reveal">
         <div class="project-card-top">
