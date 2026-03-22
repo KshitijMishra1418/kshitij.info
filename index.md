@@ -439,6 +439,135 @@ title: Home
         </a>
       </div>
     </div>
+    <style>
+#km-bubble{position:fixed;bottom:24px;right:24px;width:52px;height:52px;border-radius:50%;background:#2563eb;border:none;cursor:pointer;display:flex;align-items:center;justify-content:center;z-index:9999;box-shadow:0 0 0 0 rgba(37,99,235,0.5);animation:km-pulse 2s infinite;}
+#km-bubble svg{width:24px;height:24px;fill:white;}
+@keyframes km-pulse{0%{box-shadow:0 0 0 0 rgba(37,99,235,0.5)}70%{box-shadow:0 0 0 12px rgba(37,99,235,0)}100%{box-shadow:0 0 0 0 rgba(37,99,235,0)}}
+#km-window{position:fixed;bottom:88px;right:24px;width:340px;background:#161b22;border:1px solid #21262d;border-radius:14px;overflow:hidden;display:none;flex-direction:column;z-index:9998;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;}
+#km-header{background:#1f2937;padding:12px 16px;display:flex;align-items:center;gap:10px;border-bottom:1px solid #21262d;}
+.km-avatar{width:38px;height:38px;border-radius:50%;background:#2563eb;display:flex;align-items:center;justify-content:center;font-size:14px;font-weight:600;color:white;flex-shrink:0;}
+.km-hname{font-size:14px;font-weight:500;color:#e6edf3;}
+.km-hstatus{font-size:11px;color:#3fb950;display:flex;align-items:center;gap:4px;margin-top:2px;}
+.km-dot{width:7px;height:7px;border-radius:50%;background:#3fb950;}
+#km-close{margin-left:auto;background:none;border:none;color:#8b949e;cursor:pointer;font-size:20px;line-height:1;padding:0;}
+#km-msgs{padding:14px;height:300px;overflow-y:auto;display:flex;flex-direction:column;gap:8px;}
+.km-msg{max-width:88%;padding:9px 12px;border-radius:10px;font-size:13px;line-height:1.6;word-break:break-word;}
+.km-bot{background:#1f2937;color:#e6edf3;align-self:flex-start;border-radius:2px 10px 10px 10px;}
+.km-user{background:#2563eb;color:white;align-self:flex-end;border-radius:10px 2px 10px 10px;}
+.km-typing{background:#1f2937;color:#8b949e;align-self:flex-start;border-radius:2px 10px 10px 10px;padding:9px 14px;font-size:13px;}
+#km-quick{display:flex;flex-wrap:wrap;gap:5px;padding:0 12px 8px;}
+.km-qbtn{font-size:11px;padding:4px 10px;border-radius:20px;border:1px solid #2563eb;background:transparent;color:#58a6ff;cursor:pointer;white-space:nowrap;}
+.km-qbtn:hover{background:#1e3a5f;}
+#km-bottom{display:flex;gap:8px;padding:10px 12px;border-top:1px solid #21262d;background:#0d1117;}
+#km-input{flex:1;background:#1f2937;border:1px solid #21262d;border-radius:8px;padding:8px 12px;color:#e6edf3;font-size:13px;outline:none;font-family:inherit;}
+#km-input::placeholder{color:#4b5563;}
+#km-send{background:#2563eb;border:none;border-radius:8px;padding:8px 14px;cursor:pointer;color:white;font-size:13px;}
+#km-send:disabled{background:#21262d;color:#4b5563;cursor:not-allowed;}
+</style>
+
+<button id="km-bubble" onclick="kmToggle()" title="Chat with Kshitij AI">
+  <svg viewBox="0 0 24 24"><path d="M20 2H4c-1.1 0-2 .9-2 2v18l4-4h14c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm-2 12H6v-2h12v2zm0-3H6V9h12v2zm0-3H6V6h12v2z"/></svg>
+</button>
+
+<div id="km-window">
+  <div id="km-header">
+    <div class="km-avatar">KM</div>
+    <div>
+      <div class="km-hname">Kshitij Mishra — AI Agent</div>
+      <div class="km-hstatus"><div class="km-dot"></div>Available to chat</div>
+    </div>
+    <button id="km-close" onclick="kmToggle()">×</button>
+  </div>
+  <div id="km-msgs"></div>
+  <div id="km-quick">
+    <button class="km-qbtn" onclick="kmQuick('Tell me about yourself')">About</button>
+    <button class="km-qbtn" onclick="kmQuick('What projects have you built?')">Projects</button>
+    <button class="km-qbtn" onclick="kmQuick('What roles are you looking for?')">Roles</button>
+    <button class="km-qbtn" onclick="kmQuick('How can I contact you?')">Contact</button>
+  </div>
+  <div id="km-bottom">
+    <input id="km-input" placeholder="Ask me anything..." onkeydown="if(event.key==='Enter')kmSend()" />
+    <button id="km-send" onclick="kmSend()">Send</button>
+  </div>
+</div>
+
+<script>
+(function(){
+  const API = "https://kshitij-ai-agent.vercel.app/api/chat";
+  let open = false, msgs = [], sessionId = Date.now().toString();
+  window.kmToggle = function() {
+    open = !open;
+    const w = document.getElementById("km-window");
+    w.style.display = open ? "flex" : "none";
+    w.style.flexDirection = "column";
+    if (open && msgs.length === 0) {
+      kmAddBot("Hi! I'm Kshitij's AI agent 👋 I bridge the gap between AI systems and real world reliability. What would you like to know?");
+    }
+    if (!open && msgs.length > 1) kmSendLog();
+  };
+  window.kmQuick = function(q) {
+    document.getElementById("km-input").value = q;
+    document.getElementById("km-quick").style.display = "none";
+    kmSend();
+  };
+  function kmAddBot(text) {
+    const d = document.createElement("div");
+    d.className = "km-msg km-bot";
+    d.textContent = text;
+    document.getElementById("km-msgs").appendChild(d);
+    document.getElementById("km-msgs").scrollTop = 99999;
+  }
+  function kmAddUser(text) {
+    const d = document.createElement("div");
+    d.className = "km-msg km-user";
+    d.textContent = text;
+    document.getElementById("km-msgs").appendChild(d);
+    document.getElementById("km-msgs").scrollTop = 99999;
+  }
+  window.kmSend = async function() {
+    const inp = document.getElementById("km-input");
+    const text = inp.value.trim();
+    if (!text) return;
+    inp.value = "";
+    document.getElementById("km-send").disabled = true;
+    kmAddUser(text);
+    msgs.push({ role: "user", content: text });
+    const t = document.createElement("div");
+    t.className = "km-typing"; t.id = "km-typing";
+    t.textContent = "Kshitij is typing...";
+    document.getElementById("km-msgs").appendChild(t);
+    document.getElementById("km-msgs").scrollTop = 99999;
+    try {
+      const res = await fetch(API, {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ messages: msgs, sessionId })
+      });
+      const data = await res.json();
+      const reply = data.reply || "Sorry, please email me at mkshitij007@gmail.com!";
+      document.getElementById("km-typing")?.remove();
+      kmAddBot(reply);
+      msgs.push({ role: "assistant", content: reply });
+    } catch(e) {
+      document.getElementById("km-typing")?.remove();
+      kmAddBot("Sorry, something went wrong. Please email mkshitij007@gmail.com!");
+    }
+    document.getElementById("km-send").disabled = false;
+    inp.focus();
+  };
+  async function kmSendLog() {
+    if (msgs.length < 2) return;
+    try {
+      await fetch(API, {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ messages: msgs, sendLog: true, sessionId })
+      });
+    } catch(e) {}
+  }
+  window.addEventListener("beforeunload", () => { if (msgs.length > 1) kmSendLog(); });
+})();
+</script>
   </div>
 </section>
 
