@@ -354,7 +354,68 @@ title: Home
     </div>
   </div>
 </section>
+<section id="playground" class="section">
+<h2 class="section-label">05 — Playground</h2>
+<p class="section-intro">Run Python code directly in your browser — no install needed.</p>
 
+<div style="background:#0d1117;border:1px solid #21262d;border-radius:12px;overflow:hidden;font-family:monospace;">
+  <div style="background:#161b22;padding:10px 14px;display:flex;align-items:center;gap:8px;border-bottom:1px solid #21262d;">
+    <div style="width:12px;height:12px;border-radius:50%;background:#f85149"></div>
+    <div style="width:12px;height:12px;border-radius:50%;background:#d29922"></div>
+    <div style="width:12px;height:12px;border-radius:50%;background:#3fb950"></div>
+    <span style="font-size:12px;color:#8b949e;margin-left:6px;">Python 3.11 — Interactive Terminal</span>
+  </div>
+  <div id="py-output" style="padding:14px;min-height:160px;max-height:260px;overflow-y:auto;font-size:13px;line-height:1.7;color:#e6edf3;">
+    <div style="color:#8b949e;">Loading Python runtime... (~10 seconds first time)</div>
+  </div>
+  <div style="display:flex;align-items:center;padding:8px 14px;border-top:1px solid #21262d;background:#0d1117;">
+    <span style="color:#3fb950;font-size:13px;margin-right:6px;">&gt;&gt;&gt;</span>
+    <input id="py-input" type="text" placeholder="Type Python code and press Enter..." disabled
+      style="flex:1;background:transparent;border:none;outline:none;color:#e6edf3;font-size:13px;font-family:monospace;" />
+    <button id="py-run" disabled onclick="pyRun()"
+      style="background:#238636;border:none;color:white;padding:4px 14px;border-radius:6px;cursor:pointer;font-size:12px;">Run</button>
+  </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/pyodide/v0.24.1/full/pyodide.js"></script>
+<script>
+let _py = null, _hist = [], _hi = -1;
+async function pyLoad() {
+  _py = await loadPyodide({ indexURL: "https://cdn.jsdelivr.net/pyodide/v0.24.1/full/" });
+  pyAdd("Python 3.11 ready! Try: print('Hello World')", "#8b949e");
+  document.getElementById("py-input").disabled = false;
+  document.getElementById("py-run").disabled = false;
+  document.getElementById("py-input").focus();
+}
+function pyAdd(text, color) {
+  const o = document.getElementById("py-output");
+  const d = document.createElement("div");
+  d.style.color = color || "#e6edf3";
+  d.textContent = text;
+  o.appendChild(d);
+  o.scrollTop = o.scrollHeight;
+}
+async function pyRun() {
+  const inp = document.getElementById("py-input");
+  const code = inp.value.trim();
+  if (!code || !_py) return;
+  _hist.unshift(code); _hi = -1;
+  pyAdd(">>> " + code, "#8b949e");
+  let out = [];
+  _py.setStdout({ batched: s => out.push(s) });
+  _py.setStderr({ batched: s => pyAdd(s, "#f85149") });
+  try { await _py.runPythonAsync(code); out.forEach(l => pyAdd(l)); }
+  catch(e) { pyAdd(e.message.split("\n").pop(), "#f85149"); }
+  inp.value = "";
+}
+document.getElementById("py-input").addEventListener("keydown", function(e) {
+  if (e.key === "Enter") pyRun();
+  if (e.key === "ArrowUp") { _hi = Math.min(_hi+1, _hist.length-1); this.value = _hist[_hi] || ""; }
+  if (e.key === "ArrowDown") { _hi = Math.max(_hi-1, -1); this.value = _hi >= 0 ? _hist[_hi] : ""; }
+});
+pyLoad();
+</script>
+</section>
 <!-- WRITING -->
 <section id="writing">
   <div class="container">
