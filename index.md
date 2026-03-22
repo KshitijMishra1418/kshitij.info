@@ -440,7 +440,6 @@ title: Home
       </div>
     </div>
     <style>
-<style>
 #km-bubble{position:fixed;bottom:24px;right:24px;width:52px;height:52px;border-radius:50%;background:#2563eb;border:none;cursor:pointer;display:flex;align-items:center;justify-content:center;z-index:9999;box-shadow:0 0 0 0 rgba(37,99,235,0.5);animation:km-pulse 2s infinite;}
 #km-bubble svg{width:24px;height:24px;fill:white;}
 @keyframes km-pulse{0%{box-shadow:0 0 0 0 rgba(37,99,235,0.5)}70%{box-shadow:0 0 0 12px rgba(37,99,235,0)}100%{box-shadow:0 0 0 0 rgba(37,99,235,0)}}
