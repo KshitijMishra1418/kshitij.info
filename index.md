@@ -440,6 +440,7 @@ title: Home
       </div>
     </div>
     <style>
+<style>
 #km-bubble{position:fixed;bottom:24px;right:24px;width:52px;height:52px;border-radius:50%;background:#2563eb;border:none;cursor:pointer;display:flex;align-items:center;justify-content:center;z-index:9999;box-shadow:0 0 0 0 rgba(37,99,235,0.5);animation:km-pulse 2s infinite;}
 #km-bubble svg{width:24px;height:24px;fill:white;}
 @keyframes km-pulse{0%{box-shadow:0 0 0 0 rgba(37,99,235,0.5)}70%{box-shadow:0 0 0 12px rgba(37,99,235,0)}100%{box-shadow:0 0 0 0 rgba(37,99,235,0)}}
@@ -449,7 +450,9 @@ title: Home
 .km-hname{font-size:14px;font-weight:500;color:#e6edf3;}
 .km-hstatus{font-size:11px;color:#3fb950;display:flex;align-items:center;gap:4px;margin-top:2px;}
 .km-dot{width:7px;height:7px;border-radius:50%;background:#3fb950;}
-#km-close{margin-left:auto;background:none;border:none;color:#8b949e;cursor:pointer;font-size:20px;line-height:1;padding:0;}
+#km-restart{margin-left:auto;background:none;border:none;color:#8b949e;cursor:pointer;font-size:11px;padding:4px 8px;border-radius:6px;border:1px solid #21262d;}
+#km-restart:hover{background:#21262d;color:#e6edf3;}
+#km-close{background:none;border:none;color:#8b949e;cursor:pointer;font-size:20px;line-height:1;padding:0;margin-left:6px;}
 #km-msgs{padding:14px;height:300px;overflow-y:auto;display:flex;flex-direction:column;gap:8px;}
 .km-msg{max-width:88%;padding:9px 12px;border-radius:10px;font-size:13px;line-height:1.6;word-break:break-word;}
 .km-bot{background:#1f2937;color:#e6edf3;align-self:flex-start;border-radius:2px 10px 10px 10px;}
@@ -476,6 +479,7 @@ title: Home
       <div class="km-hname">Kshitij Mishra — AI Agent</div>
       <div class="km-hstatus"><div class="km-dot"></div>Available to chat</div>
     </div>
+    <button id="km-restart" onclick="kmRestart()" title="Start new conversation">↺ New chat</button>
     <button id="km-close" onclick="kmToggle()">×</button>
   </div>
   <div id="km-msgs"></div>
@@ -500,10 +504,20 @@ title: Home
     const w = document.getElementById("km-window");
     w.style.display = open ? "flex" : "none";
     w.style.flexDirection = "column";
-    if (open && msgs.length === 0) {
-      kmAddBot("Hi! I'm Kshitij's AI agent 👋 I bridge the gap between AI systems and real world reliability. What would you like to know?");
-    }
+    if (open && msgs.length === 0) kmWelcome();
     if (!open && msgs.length > 1) kmSendLog();
+  };
+  function kmWelcome() {
+    kmAddBot("Hi! I'm Kshitij's AI agent 👋 I bridge the gap between AI systems and real world reliability. What would you like to know?");
+    document.getElementById("km-quick").style.display = "flex";
+  }
+  window.kmRestart = function() {
+    if (msgs.length > 1) kmSendLog();
+    msgs = [];
+    sessionId = Date.now().toString();
+    document.getElementById("km-msgs").innerHTML = "";
+    document.getElementById("km-quick").style.display = "flex";
+    kmWelcome();
   };
   window.kmQuick = function(q) {
     document.getElementById("km-input").value = q;
