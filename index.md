@@ -498,6 +498,17 @@ title: Home
 (function(){
   const API = "https://kshitij-ai-agent.vercel.app/api/chat";
   let open = false, msgs = [], sessionId = Date.now().toString();
+  setTimeout(function() {
+  var tip = document.createElement("div");
+  tip.id = "km-tooltip";
+  tip.textContent = "💬 Chat with Kshitij's AI";
+  tip.style.cssText = "position:fixed;bottom:86px;right:24px;background:#2563eb;color:white;padding:8px 14px;border-radius:8px;font-size:12px;font-family:-apple-system,sans-serif;z-index:9999;opacity:1;transition:opacity 0.5s;white-space:nowrap;";
+  document.body.appendChild(tip);
+  setTimeout(function() {
+    tip.style.opacity = "0";
+    setTimeout(function() { tip.remove(); }, 500);
+  }, 5000);
+}, 2000);
   window.kmToggle = function() {
     open = !open;
     const w = document.getElementById("km-window");
