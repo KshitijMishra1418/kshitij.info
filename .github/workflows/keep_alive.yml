@@ -1,0 +1,19 @@
+name: Keep Streamlit Apps Alive
+
+on:
+  schedule:
+    - cron: "*/30 * * * *"
+  workflow_dispatch:
+
+jobs:
+  ping:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Ping Voice Eval App
+        run: curl https://voice-eval-km.streamlit.app/
+
+      - name: Ping Crypto Analysis App
+        run: curl https://crypto-analysis-km.streamlit.app/
+
+      - name: Ping Retention Dashboard App
+        run: curl https://retention-dashboard-km.streamlit.app/
