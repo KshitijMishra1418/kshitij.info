@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "RAG vs Vectorless RAG — Engineering Difference in Modern LLM Retrieval Systems"
-date: 2026-03-28
+date: 2026-03-27
 categories: ai engineering llm rag retrieval
 ---
 
