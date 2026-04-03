@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "LangGraph vs LangChain — Architectural Differences for Production AI Agents"
-date: 2026-04-03
+date: 2026-04-01
 categories: ai engineering llm agents orchestration systems
 ---
 
@@ -235,3 +235,4 @@ multi-agent coordination
 retry-aware execution  
 
 These patterns are common in modern production AI agents.
+ 
