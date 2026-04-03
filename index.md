@@ -5,6 +5,21 @@ title: Home
 
 <main>
 
+<!-- MOBILE HERO ORDER FIX -->
+<style>
+@media (max-width: 768px) {
+  .hero-inner {
+    flex-direction: column !important;
+  }
+  .hero-left {
+    order: 1 !important;
+  }
+  .hero-right {
+    order: 2 !important;
+  }
+}
+</style>
+
 <!-- HERO -->
 <section id="hero">
   <div class="container">
