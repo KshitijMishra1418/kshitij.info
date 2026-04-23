@@ -375,16 +375,21 @@ title: Home
   <div class="container">
     <div class="section-label">04 &mdash; Writing</div>
     <h2 class="section-title">Engineering log</h2>
+
     <div class="posts-list">
       {% assign sorted_posts = site.posts | sort: 'date' | reverse %}
-      {% for post in sorted_posts %}
+
+      {% for post in sorted_posts limit:6 %}
       <a class="post-row reveal" href="{{ post.url }}">
         <div class="post-row-left">
           <span class="post-row-title">{{ post.title }}</span>
           <div class="post-row-tags">
-            {% for tag in post.tags %}<span>{{ tag }}</span>{% endfor %}
+            {% for tag in post.tags %}
+              <span>{{ tag }}</span>
+            {% endfor %}
           </div>
         </div>
+
         <div class="post-row-right">
           <time>{{ post.date | date: "%b %d, %Y" }}</time>
           <span class="post-row-arrow">→</span>
@@ -392,10 +397,16 @@ title: Home
       </a>
       {% endfor %}
     </div>
+
     <a class="view-more" href="/notes/">
       View all articles
-      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"
+           stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <line x1="5" y1="12" x2="19" y2="12"/>
+        <polyline points="12 5 19 12 12 19"/>
+      </svg>
     </a>
+
   </div>
 </section>
 
